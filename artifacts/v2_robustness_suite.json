@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "name": "GrantShift v2 robustness suite",
+    "synthetic_labels": true,
+    "test_n": 900
+  },
+  "canonical": {
+    "exact": 0.9866666666666667,
+    "acceptable": 0.9866666666666667,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.42,
+    "unnecessary_intervention_rate": 0.011111111111111112,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": 0.8627777777777778
+  },
+  "paraphrase": {
+    "exact": 0.5277777777777778,
+    "acceptable": 0.7622222222222222,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.8611111111111112,
+    "unnecessary_intervention_rate": 0.20444444444444446,
+    "missed_opportunity_rate": 0.03333333333333333,
+    "synthetic_expected_utility": 0.18194444444444444
+  },
+  "negative_controls": {
+    "authorization_shuffled": {
+      "exact": 0.37555555555555553,
+      "acceptable": 0.5744444444444444,
+      "unauthorized_act_rate": 0.04777777777777778,
+      "question_burden": 0.4088888888888889,
+      "unnecessary_intervention_rate": 0.19555555555555557,
+      "missed_opportunity_rate": 0.18777777777777777,
+      "synthetic_expected_utility": -0.2802777777777778
+    },
+    "authorization_masked": {
+      "exact": 0.44666666666666666,
+      "acceptable": 0.5933333333333334,
+      "unauthorized_act_rate": 0.04,
+      "question_burden": 0.5555555555555556,
+      "unnecessary_intervention_rate": 0.16666666666666666,
+      "missed_opportunity_rate": 0.20222222222222222,
+      "synthetic_expected_utility": -0.26055555555555554
+    },
+    "preference_shuffled": {
+      "exact": 0.8855555555555555,
+      "acceptable": 0.9066666666666666,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.4222222222222222,
+      "unnecessary_intervention_rate": 0.03777777777777778,
+      "missed_opportunity_rate": 0.03,
+      "synthetic_expected_utility": 0.6547222222222222
+    },
+    "preference_masked": {
+      "exact": 0.9011111111111111,
+      "acceptable": 0.9011111111111111,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.38333333333333336,
+      "unnecessary_intervention_rate": 0.06,
+      "missed_opportunity_rate": 0.0,
+      "synthetic_expected_utility": 0.6569444444444444
+    }
+  },
+  "surface_augmentation": {
+    "canonical": {
+      "exact": 0.9911111111111112,
+      "acceptable": 0.9911111111111112,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.42,
+      "unnecessary_intervention_rate": 0.006666666666666667,
+      "missed_opportunity_rate": 0.0,
+      "synthetic_expected_utility": 0.8738888888888889
+    },
+    "paraphrase": {
+      "exact": 0.99,
+      "acceptable": 0.99,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.41888888888888887,
+      "unnecessary_intervention_rate": 0.006666666666666667,
+      "missed_opportunity_rate": 0.0,
+      "synthetic_expected_utility": 0.8719444444444444
+    }
+  },
+  "train_subsample_robustness": {
+    "runs": [
+      {
+        "seed": 11,
+        "exact": 0.9866666666666667,
+        "acceptable": 0.9866666666666667,
+        "unauthorized_act_rate": 0.0,
+        "question_burden": 0.42,
+        "unnecessary_intervention_rate": 0.011111111111111112,
+        "missed_opportunity_rate": 0.0,
+        "synthetic_expected_utility": 0.8627777777777778
+      },
+      {
+        "seed": 23,
+        "exact": 0.9855555555555555,
+        "acceptable": 0.9855555555555555,
+        "unauthorized_act_rate": 0.0,
+        "question_burden": 0.41888888888888887,
+        "unnecessary_intervention_rate": 0.011111111111111112,
+        "missed_opportunity_rate": 0.0,
+        "synthetic_expected_utility": 0.8608333333333333
+      },
+      {
+        "seed": 37,
+        "exact": 0.9844444444444445,
+        "acceptable": 0.9844444444444445,
+        "unauthorized_act_rate": 0.0,
+        "question_burden": 0.42,
+        "unnecessary_intervention_rate": 0.013333333333333334,
+        "missed_opportunity_rate": 0.0,
+        "synthetic_expected_utility": 0.8572222222222222
+      },
+      {
+        "seed": 51,
+        "exact": 0.9855555555555555,
+        "acceptable": 0.9855555555555555,
+        "unauthorized_act_rate": 0.0,
+        "question_burden": 0.41888888888888887,
+        "unnecessary_intervention_rate": 0.011111111111111112,
+        "missed_opportunity_rate": 0.0,
+        "synthetic_expected_utility": 0.8608333333333333
+      },
+      {
+        "seed": 79,
+        "exact": 0.9855555555555555,
+        "acceptable": 0.9855555555555555,
+        "unauthorized_act_rate": 0.0,
+        "question_burden": 0.41888888888888887,
+        "unnecessary_intervention_rate": 0.011111111111111112,
+        "missed_opportunity_rate": 0.0,
+        "synthetic_expected_utility": 0.8608333333333333
+      }
+    ],
+    "summary": {
+      "exact": {
+        "mean": 0.9855555555555555,
+        "std": 0.0007856742013183912,
+        "min": 0.9844444444444445,
+        "max": 0.9866666666666667
+      },
+      "acceptable": {
+        "mean": 0.9855555555555555,
+        "std": 0.0007856742013183912,
+        "min": 0.9844444444444445,
+        "max": 0.9866666666666667
+      },
+      "unauthorized_act_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "question_burden": {
+        "mean": 0.41933333333333334,
+        "std": 0.0006085806194501885,
+        "min": 0.41888888888888887,
+        "max": 0.42
+      },
+      "synthetic_expected_utility": {
+        "mean": 0.8605,
+        "std": 0.002016521268097944,
+        "min": 0.8572222222222222,
+        "max": 0.8627777777777778
+      }
+    }
+  },
+  "leave_one_domain_out": {
+    "calendar": {
+      "n": 168,
+      "exact": 0.9583333333333334,
+      "acceptable": 0.9583333333333334,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.3869047619047619,
+      "unnecessary_intervention_rate": 0.0,
+      "missed_opportunity_rate": 0.011904761904761904,
+      "synthetic_expected_utility": 0.8110119047619048
+    },
+    "communication": {
+      "n": 156,
+      "exact": 0.9423076923076923,
+      "acceptable": 0.9423076923076923,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.36538461538461536,
+      "unnecessary_intervention_rate": 0.01282051282051282,
+      "missed_opportunity_rate": 0.01282051282051282,
+      "synthetic_expected_utility": 0.7772435897435898
+    },
+    "email": {
+      "n": 108,
+      "exact": 0.9444444444444444,
+      "acceptable": 0.9444444444444444,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.3888888888888889,
+      "unnecessary_intervention_rate": 0.018518518518518517,
+      "missed_opportunity_rate": 0.0,
+      "synthetic_expected_utility": 0.7824074074074074
+    },
+    "files": {
+      "n": 144,
+      "exact": 0.9375,
+      "acceptable": 0.9375,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.375,
+      "unnecessary_intervention_rate": 0.006944444444444444,
+      "missed_opportunity_rate": 0.013888888888888888,
+      "synthetic_expected_utility": 0.7673611111111112
+    },
+    "productivity": {
+      "n": 96,
+      "exact": 0.96875,
+      "acceptable": 0.96875,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.375,
+      "unnecessary_intervention_rate": 0.010416666666666666,
+      "missed_opportunity_rate": 0.0,
+      "synthetic_expected_utility": 0.8385416666666666
+    },
+    "shopping": {
+      "n": 72,
+      "exact": 0.9305555555555556,
+      "acceptable": 0.9305555555555556,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.375,
+      "unnecessary_intervention_rate": 0.0,
+      "missed_opportunity_rate": 0.013888888888888888,
+      "synthetic_expected_utility": 0.7569444444444444
+    },
+    "travel": {
+      "n": 156,
+      "exact": 0.9551282051282052,
+      "acceptable": 0.9551282051282052,
+      "unauthorized_act_rate": 0.0,
+      "question_burden": 0.3974358974358974,
+      "unnecessary_intervention_rate": 0.019230769230769232,
+      "missed_opportunity_rate": 0.01282051282051282,
+      "synthetic_expected_utility": 0.7916666666666666
+    }
+  }
+}

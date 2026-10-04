@@ -1,0 +1,19 @@
+{
+  "0.005": {
+    "action_stability": 0.9964705882352941,
+    "comparisons": 850
+  },
+  "0.01": {
+    "action_stability": 0.9964705882352941,
+    "comparisons": 850
+  },
+  "0.02": {
+    "action_stability": 0.9964705882352941,
+    "comparisons": 850
+  },
+  "0.05": {
+    "action_stability": 0.9905882352941177,
+    "comparisons": 850
+  },
+  "notes": "Local numeric-jitter stability is a sensitivity diagnostic, not a correctness metric."
+}

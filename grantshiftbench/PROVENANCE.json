@@ -1,0 +1,75 @@
+{
+  "benchmark": "GrantShiftBench",
+  "version": "1.2.0",
+  "author": "Aura Yavary",
+  "synthetic_oracle": true,
+  "files": [
+    {
+      "path": "grantshiftbench/scenarios/v1.jsonl",
+      "sha256": "ef1c67789f3d26aca47eaf49eb0f5f612c2f4e246e6186e875297de6b889c93f",
+      "bytes": 614874
+    },
+    {
+      "path": "grantshiftbench/scenarios/contrast_v1.jsonl",
+      "sha256": "da822cc48baef50032846dbeb5aa03d1c010b09be11e1727b0927d6f3bf228bf",
+      "bytes": 165283
+    },
+    {
+      "path": "grantshiftbench/scenarios/frontier_v1.jsonl",
+      "sha256": "475c385e7fed26ab66bda359aad189cf2c174105eec01059c6f63064ab02eaf5",
+      "bytes": 257752
+    },
+    {
+      "path": "grantshiftbench/scenarios/splits.json",
+      "sha256": "effdac9df6ada356965961acb140683657e57f1c27b34ce9097ebb44f8444f3d",
+      "bytes": 42462
+    },
+    {
+      "path": "grantshiftbench/generators/generate_v1.py",
+      "sha256": "dc05d16c4c63bee37714e7207df8d0b063557c52fa63538c79c372ac0853f432",
+      "bytes": 4915
+    },
+    {
+      "path": "grantshiftbench/generators/generate_contrast.py",
+      "sha256": "5376f27b4abb140ed015b4de848c68d20f2651661dcd4f818a82babd25e7f193",
+      "bytes": 1652
+    },
+    {
+      "path": "grantshiftbench/generators/generate_frontier.py",
+      "sha256": "53af452b6db84bf1b9e435c818b3cb3fb380f268e70bca5ffd04583eb20fe895",
+      "bytes": 1628
+    },
+    {
+      "path": "grantshiftbench/v2/factorial_inputs.jsonl",
+      "sha256": "22babec6c54adf1b06e8ca7a7833adff6b6712c7153a6d928c2c87e73787cf2d",
+      "bytes": 4940752
+    },
+    {
+      "path": "grantshiftbench/v2/factorial_gold.jsonl",
+      "sha256": "9988f3ca6799b6b3df7dbd9707bb703c7bf4364eb6d2fe9f1f9d3a0feb5cabd8",
+      "bytes": 1741658
+    },
+    {
+      "path": "grantshiftbench/v2/factorial_splits.json",
+      "sha256": "d6cb1bca7a4f33663232ee8cc49138ff58028db66424a842a1897a15f2854a9d",
+      "bytes": 7585
+    },
+    {
+      "path": "grantshiftbench/v2/factorial_paraphrase_test_inputs.jsonl",
+      "sha256": "da6b1fac8c7340c874534054f364443a6941ccc461e6ea479dee58309b856f95",
+      "bytes": 733695
+    },
+    {
+      "path": "grantshiftbench/v2/generate_factorial.py",
+      "sha256": "a0867ef282badfd0b91227ad67c7e91b595fac770a752e574c25176382a93db7",
+      "bytes": 11392
+    }
+  ],
+  "counts": {
+    "legacy_main": 600,
+    "legacy_contrastive_personalization": 160,
+    "legacy_authorization_frontier": 240,
+    "v2_factorial": 6000,
+    "v2_paraphrase_stress": 900
+  }
+}

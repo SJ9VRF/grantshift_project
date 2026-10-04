@@ -1,0 +1,35 @@
+{
+  "name": "GrantShiftBench Authorization Provenance Challenge",
+  "n_trajectories": 864,
+  "n_steps": 2592,
+  "domains": [
+    "email",
+    "calendar",
+    "travel",
+    "shopping",
+    "files",
+    "communication"
+  ],
+  "preferences": [
+    "act",
+    "ask",
+    "suggest"
+  ],
+  "families": [
+    "resource_changed_after_grant",
+    "wrong_principal_confirmation",
+    "nonce_replay_after_new_request",
+    "concurrent_request_crosswire",
+    "revision_changed_after_grant",
+    "delegated_authority_revoked"
+  ],
+  "grant_binding": [
+    "principal",
+    "request_id",
+    "resource",
+    "revision",
+    "nonce"
+  ],
+  "design": "A grant is valid only for its bound principal/request/resource/revision and only while the authority chain remains valid.",
+  "evidence_status": "synthetic adversarial mechanism test; not human or frontier-model evidence"
+}

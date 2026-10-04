@@ -1,0 +1,35 @@
+{
+  "main_generic_vs_personalized": {
+    "paired_bootstrap": {
+      "delta_accuracy": 0.05882352941176472,
+      "ci95": [
+        0.0,
+        0.11764705882352944
+      ],
+      "bootstrap_samples": 10000
+    },
+    "mcnemar_exact": {
+      "a_correct_b_wrong": 1,
+      "a_wrong_b_correct": 6,
+      "discordant": 7,
+      "p_value_two_sided": 0.125
+    }
+  },
+  "frontier_unconstrained_vs_authorization_first": {
+    "paired_bootstrap": {
+      "delta_accuracy": 0.375,
+      "ci95": [
+        0.3125,
+        0.43749999999999994
+      ],
+      "bootstrap_samples": 10000
+    },
+    "mcnemar_exact": {
+      "a_correct_b_wrong": 0,
+      "a_wrong_b_correct": 90,
+      "discordant": 90,
+      "p_value_two_sided": 1.6155871338926322e-27
+    }
+  },
+  "notes": "Paired tests are descriptive for this synthetic benchmark and do not establish real-user significance."
+}

@@ -1,0 +1,41 @@
+{
+  "name": "GrantShiftBench Capability Ledger Challenge",
+  "n_trajectories": 1440,
+  "n_steps": 5760,
+  "families": [
+    "delegation_parent_revoked",
+    "direct_nonce_revoked",
+    "expired_grant_replayed",
+    "concurrent_confirmation_reordered",
+    "request_changed_old_grant",
+    "principal_mismatch_grant",
+    "resource_mismatch_grant",
+    "revision_mismatch_grant",
+    "scope_changed_then_regranted",
+    "principal_switch_old_nonce"
+  ],
+  "domains": [
+    "email",
+    "calendar",
+    "travel",
+    "shopping",
+    "files",
+    "communication"
+  ],
+  "preferences": [
+    "act",
+    "ask",
+    "suggest"
+  ],
+  "validity_dimensions": [
+    "principal",
+    "request_id",
+    "resource",
+    "revision",
+    "nonce",
+    "expiry",
+    "delegation_parent",
+    "revocation_history"
+  ],
+  "evidence_status": "synthetic adversarial mechanism test; not human or frontier-model evidence"
+}

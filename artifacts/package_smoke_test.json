@@ -1,0 +1,8 @@
+{
+  "version": "1.7.0",
+  "wheel": "dist/grantshift_agent-1.7.0-py3-none-any.whl",
+  "wheel_exists": true,
+  "import_version": "1.7.0",
+  "clean_target_import_passed": true,
+  "wheel_sha256": "44aabc1cbd65a6e23678491f49de2115408459e0476cb9abfe3d9e5ba898d56d"
+}

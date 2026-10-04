@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "evaluation": "held-out surface-form paraphrase stress test",
+    "n": 900,
+    "training_surface": "canonical",
+    "test_surface": "unseen deterministic paraphrases",
+    "synthetic_labels": true
+  },
+  "C3_full_paraphrase": {
+    "exact": 0.5277777777777778,
+    "acceptable": 0.7622222222222222,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.8611111111111112,
+    "unnecessary_intervention_rate": 0.20444444444444446,
+    "missed_opportunity_rate": 0.03333333333333333,
+    "synthetic_expected_utility": 0.18194444444444444
+  }
+}

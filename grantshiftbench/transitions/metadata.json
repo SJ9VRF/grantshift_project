@@ -1,0 +1,28 @@
+{
+  "name": "GrantShiftBench Authorization Transitions",
+  "n_trajectories": 1260,
+  "domains": [
+    "email",
+    "calendar",
+    "travel",
+    "shopping",
+    "files",
+    "communication"
+  ],
+  "preferences": [
+    "act",
+    "ask",
+    "suggest"
+  ],
+  "transition_types": [
+    "grant",
+    "revoke",
+    "expire",
+    "supersede",
+    "delayed_confirm",
+    "deny_after_ask",
+    "stale_confirmation"
+  ],
+  "design": "Preference is held fixed while authorization state changes within a trajectory.",
+  "evidence_status": "synthetic controlled benchmark; not human normative ground truth"
+}

@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "synthetic_utility_sensitivity": true,
+    "ask_cost_grid": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "overreach_penalty_grid": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ]
+  },
+  "grid": [
+    {
+      "ask_cost": 0.0,
+      "overreach_penalty": 1.0,
+      "C3_full": 0.9677777777777777,
+      "always_ask": 0.225,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.0,
+      "overreach_penalty": 2.0,
+      "C3_full": 0.9677777777777777,
+      "always_ask": 0.225,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.0,
+      "overreach_penalty": 3.0,
+      "C3_full": 0.9677777777777777,
+      "always_ask": 0.225,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.0,
+      "overreach_penalty": 5.0,
+      "C3_full": 0.9677777777777777,
+      "always_ask": 0.225,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.0,
+      "overreach_penalty": 10.0,
+      "C3_full": 0.9677777777777777,
+      "always_ask": 0.225,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.1,
+      "overreach_penalty": 1.0,
+      "C3_full": 0.9257777777777778,
+      "always_ask": 0.12499999999999999,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.1,
+      "overreach_penalty": 2.0,
+      "C3_full": 0.9257777777777778,
+      "always_ask": 0.12499999999999999,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.1,
+      "overreach_penalty": 3.0,
+      "C3_full": 0.9257777777777778,
+      "always_ask": 0.12499999999999999,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.1,
+      "overreach_penalty": 5.0,
+      "C3_full": 0.9257777777777778,
+      "always_ask": 0.12499999999999999,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.1,
+      "overreach_penalty": 10.0,
+      "C3_full": 0.9257777777777778,
+      "always_ask": 0.12499999999999999,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.25,
+      "overreach_penalty": 1.0,
+      "C3_full": 0.8627777777777778,
+      "always_ask": -0.025,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.25,
+      "overreach_penalty": 2.0,
+      "C3_full": 0.8627777777777778,
+      "always_ask": -0.025,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.25,
+      "overreach_penalty": 3.0,
+      "C3_full": 0.8627777777777778,
+      "always_ask": -0.025,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.25,
+      "overreach_penalty": 5.0,
+      "C3_full": 0.8627777777777778,
+      "always_ask": -0.025,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.25,
+      "overreach_penalty": 10.0,
+      "C3_full": 0.8627777777777778,
+      "always_ask": -0.025,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.5,
+      "overreach_penalty": 1.0,
+      "C3_full": 0.7577777777777778,
+      "always_ask": -0.275,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.5,
+      "overreach_penalty": 2.0,
+      "C3_full": 0.7577777777777778,
+      "always_ask": -0.275,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.5,
+      "overreach_penalty": 3.0,
+      "C3_full": 0.7577777777777778,
+      "always_ask": -0.275,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.5,
+      "overreach_penalty": 5.0,
+      "C3_full": 0.7577777777777778,
+      "always_ask": -0.275,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 0.5,
+      "overreach_penalty": 10.0,
+      "C3_full": 0.7577777777777778,
+      "always_ask": -0.275,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 1.0,
+      "overreach_penalty": 1.0,
+      "C3_full": 0.5477777777777778,
+      "always_ask": -0.775,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 1.0,
+      "overreach_penalty": 2.0,
+      "C3_full": 0.5477777777777778,
+      "always_ask": -0.775,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 1.0,
+      "overreach_penalty": 3.0,
+      "C3_full": 0.5477777777777778,
+      "always_ask": -0.775,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 1.0,
+      "overreach_penalty": 5.0,
+      "C3_full": 0.5477777777777778,
+      "always_ask": -0.775,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    },
+    {
+      "ask_cost": 1.0,
+      "overreach_penalty": 10.0,
+      "C3_full": 0.5477777777777778,
+      "always_ask": -0.775,
+      "always_silent": -0.8975,
+      "always_suggest": 0.125,
+      "best": "C3_full"
+    }
+  ],
+  "winner_counts": {
+    "C3_full": 25,
+    "always_ask": 0,
+    "always_silent": 0,
+    "always_suggest": 0
+  }
+}

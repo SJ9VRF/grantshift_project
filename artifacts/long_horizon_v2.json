@@ -1,0 +1,710 @@
+{
+  "turns": 100,
+  "drift_turn": 40,
+  "corrections": 1,
+  "frozen_overreach_after_drift": 1.0,
+  "adaptive_overreach_after_drift": 0.016666666666666666,
+  "adaptation_latency_turns": 1,
+  "trajectory": [
+    {
+      "turn": 0,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 1,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 2,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 3,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 4,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 5,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 6,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 7,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 8,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 9,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 10,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 11,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 12,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 13,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 14,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 15,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 16,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 17,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 18,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 19,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 20,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 21,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 22,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 23,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 24,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 25,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 26,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 27,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 28,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 29,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 30,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 31,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 32,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 33,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 34,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 35,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 36,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 37,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 38,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 39,
+      "true_preference": "confirm",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "ask"
+    },
+    {
+      "turn": 40,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "ask",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 41,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 42,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 43,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 44,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 45,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 46,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 47,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 48,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 49,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 50,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 51,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 52,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 53,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 54,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 55,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 56,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 57,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 58,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 59,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 60,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 61,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 62,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 63,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 64,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 65,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 66,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 67,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 68,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 69,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 70,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 71,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 72,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 73,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 74,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 75,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 76,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 77,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 78,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 79,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 80,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 81,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 82,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 83,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 84,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 85,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 86,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 87,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 88,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 89,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 90,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 91,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 92,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 93,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 94,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 95,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 96,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 97,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 98,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    },
+    {
+      "turn": 99,
+      "true_preference": "minimal",
+      "frozen_action": "ask",
+      "adaptive_action": "do_nothing",
+      "preferred_action": "do_nothing"
+    }
+  ]
+}

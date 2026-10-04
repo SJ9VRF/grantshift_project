@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "synthetic_labels": true,
+    "purpose": "stress-test generalization; not evidence of real-user validity"
+  },
+  "ood_domain": {
+    "train_n": 383,
+    "calibration_n": 67,
+    "test_n": 150,
+    "generic": {
+      "accuracy": 0.7733333333333333,
+      "acceptable_action_rate": 0.9933333333333333,
+      "false_proactivity_rate": 0.0,
+      "missed_opportunity_rate": 0.021739130434782608,
+      "autonomy_violation_rate": 0.0,
+      "useful_intervention_precision": 1.0,
+      "useful_intervention_recall": 0.9782608695652174,
+      "mean_wrong_action_severity": 0.25,
+      "calibration": {
+        "ece": 0.11221938391521655,
+        "mean_confidence": 0.878228843020594,
+        "empirical_accuracy": 0.7733333333333333,
+        "brier_toplabel": 0.1576467831725652
+      }
+    },
+    "personalized": {
+      "accuracy": 0.8666666666666667,
+      "acceptable_action_rate": 0.9933333333333333,
+      "false_proactivity_rate": 0.0,
+      "missed_opportunity_rate": 0.021739130434782608,
+      "autonomy_violation_rate": 0.0,
+      "useful_intervention_precision": 1.0,
+      "useful_intervention_recall": 0.9782608695652174,
+      "mean_wrong_action_severity": 0.25,
+      "calibration": {
+        "ece": 0.06904808109385248,
+        "mean_confidence": 0.9181300879923303,
+        "empirical_accuracy": 0.8666666666666667,
+        "brier_toplabel": 0.07553619307338304
+      }
+    },
+    "heldout_domains": [
+      "financial",
+      "high_stakes",
+      "privacy"
+    ]
+  },
+  "ood_trigger": {
+    "train_n": 408,
+    "calibration_n": 72,
+    "test_n": 120,
+    "generic": {
+      "accuracy": 0.5583333333333333,
+      "acceptable_action_rate": 0.9166666666666666,
+      "false_proactivity_rate": 1.0,
+      "missed_opportunity_rate": 0.0,
+      "autonomy_violation_rate": 0.0,
+      "useful_intervention_precision": 0.9166666666666666,
+      "useful_intervention_recall": 1.0,
+      "mean_wrong_action_severity": 0.8539999999999999,
+      "calibration": {
+        "ece": 0.33130271654111454,
+        "mean_confidence": 0.880451916124471,
+        "empirical_accuracy": 0.5583333333333333,
+        "brier_toplabel": 0.31964423951489374
+      }
+    },
+    "personalized": {
+      "accuracy": 0.8166666666666667,
+      "acceptable_action_rate": 0.9,
+      "false_proactivity_rate": 1.0,
+      "missed_opportunity_rate": 0.06363636363636363,
+      "autonomy_violation_rate": 0.0,
+      "useful_intervention_precision": 0.911504424778761,
+      "useful_intervention_recall": 0.9363636363636364,
+      "mean_wrong_action_severity": 0.7775,
+      "calibration": {
+        "ece": 0.1312179052618844,
+        "mean_confidence": 0.8537665497715708,
+        "empirical_accuracy": 0.8166666666666667,
+        "brier_toplabel": 0.1463353470282795
+      }
+    },
+    "heldout_triggers": [
+      "new_information",
+      "privacy_change"
+    ]
+  }
+}

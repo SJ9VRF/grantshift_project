@@ -1,0 +1,191 @@
+{
+  "benchmark": "GrantShiftBench Authorization Transitions",
+  "n_trajectories": 1260,
+  "policies": {
+    "static_initial_authority": {
+      "steps": 3060,
+      "exact_rate": 0.47058823529411764,
+      "stale_authority_execution_rate": 0.11764705882352941,
+      "premature_execution_rate": 0.0,
+      "repeated_ask_rate": 0.11764705882352941,
+      "mean_authorization_update_latency_steps": 0.8888888888888888,
+      "by_transition": {
+        "delayed_confirm": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_authority_execution_rate": 0.0
+        },
+        "deny_after_ask": {
+          "n_steps": 360,
+          "exact_rate": 0.5,
+          "stale_authority_execution_rate": 0.0
+        },
+        "expire": {
+          "n_steps": 360,
+          "exact_rate": 0.5,
+          "stale_authority_execution_rate": 0.5
+        },
+        "grant": {
+          "n_steps": 360,
+          "exact_rate": 0.5,
+          "stale_authority_execution_rate": 0.0
+        },
+        "revoke": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_authority_execution_rate": 0.0
+        },
+        "stale_confirmation": {
+          "n_steps": 540,
+          "exact_rate": 0.6666666666666666,
+          "stale_authority_execution_rate": 0.0
+        },
+        "supersede": {
+          "n_steps": 360,
+          "exact_rate": 0.5,
+          "stale_authority_execution_rate": 0.5
+        }
+      }
+    },
+    "preference_first": {
+      "steps": 3060,
+      "exact_rate": 0.35294117647058826,
+      "stale_authority_execution_rate": 0.0392156862745098,
+      "premature_execution_rate": 0.13725490196078433,
+      "repeated_ask_rate": 0.0392156862745098,
+      "mean_authorization_update_latency_steps": 0.5925925925925926,
+      "by_transition": {
+        "delayed_confirm": {
+          "n_steps": 540,
+          "exact_rate": 0.2222222222222222,
+          "stale_authority_execution_rate": 0.0
+        },
+        "deny_after_ask": {
+          "n_steps": 360,
+          "exact_rate": 0.6666666666666666,
+          "stale_authority_execution_rate": 0.0
+        },
+        "expire": {
+          "n_steps": 360,
+          "exact_rate": 0.16666666666666666,
+          "stale_authority_execution_rate": 0.16666666666666666
+        },
+        "grant": {
+          "n_steps": 360,
+          "exact_rate": 0.3333333333333333,
+          "stale_authority_execution_rate": 0.0
+        },
+        "revoke": {
+          "n_steps": 540,
+          "exact_rate": 0.5555555555555556,
+          "stale_authority_execution_rate": 0.0
+        },
+        "stale_confirmation": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_authority_execution_rate": 0.0
+        },
+        "supersede": {
+          "n_steps": 360,
+          "exact_rate": 0.16666666666666666,
+          "stale_authority_execution_rate": 0.16666666666666666
+        }
+      }
+    },
+    "latest_state": {
+      "steps": 3060,
+      "exact_rate": 1.0,
+      "stale_authority_execution_rate": 0.0,
+      "premature_execution_rate": 0.0,
+      "repeated_ask_rate": 0.0,
+      "mean_authorization_update_latency_steps": 0.0,
+      "by_transition": {
+        "delayed_confirm": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "deny_after_ask": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "expire": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "grant": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "revoke": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "stale_confirmation": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "supersede": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        }
+      }
+    },
+    "authorization_state_machine": {
+      "steps": 3060,
+      "exact_rate": 1.0,
+      "stale_authority_execution_rate": 0.0,
+      "premature_execution_rate": 0.0,
+      "repeated_ask_rate": 0.0,
+      "mean_authorization_update_latency_steps": 0.0,
+      "by_transition": {
+        "delayed_confirm": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "deny_after_ask": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "expire": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "grant": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "revoke": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "stale_confirmation": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        },
+        "supersede": {
+          "n_steps": 360,
+          "exact_rate": 1.0,
+          "stale_authority_execution_rate": 0.0
+        }
+      }
+    }
+  },
+  "notes": [
+    "Synthetic mechanism check; not frontier-model evidence.",
+    "Preference history is held fixed within each trajectory while authorization state changes.",
+    "Stale-authority execution measures ACT after revoke/expire/supersede/deny."
+  ]
+}

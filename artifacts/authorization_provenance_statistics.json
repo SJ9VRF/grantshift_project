@@ -1,0 +1,76 @@
+{
+  "benchmark": "GrantShiftBench Authorization Provenance Challenge",
+  "policies": {
+    "preference_first": {
+      "exact": {
+        "point": 0.35185185185185186,
+        "ci95": [
+          0.33564814814814814,
+          0.36921296296296297
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      },
+      "invalid_provenance_execution": {
+        "point": 0.1111111111111111,
+        "ci95": [
+          0.10107060185185185,
+          0.12152777777777778
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      }
+    },
+    "latest_authorization_label": {
+      "exact": {
+        "point": 0.6666666666666666,
+        "ci95": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      },
+      "invalid_provenance_execution": {
+        "point": 0.3333333333333333,
+        "ci95": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      }
+    },
+    "provenance_state_machine": {
+      "exact": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      },
+      "invalid_provenance_execution": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_clusters": 864,
+        "B": 2000
+      }
+    }
+  },
+  "paired_exact_comparison": {
+    "a": "latest_authorization_label",
+    "b": "provenance_state_machine",
+    "a_correct_b_wrong": 0,
+    "b_correct_a_wrong": 864,
+    "discordant": 864,
+    "exact_two_sided_p": 1.6259745436952323e-260
+  },
+  "notes": [
+    "Trajectory-cluster bootstrap; synthetic instrument uncertainty only."
+  ]
+}

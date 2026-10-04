@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "name": "GrantShift Factorial v2 synthetic pilot",
+    "train_n": 4200,
+    "dev_n": 900,
+    "test_n": 900,
+    "base_test_n": 75,
+    "gold_type": "synthetic latent oracle; no human validity claim",
+    "input_excludes_structured_latent_factors": true,
+    "counterfactual_group_split": true
+  },
+  "C0_state_only": {
+    "exact": 0.24,
+    "acceptable": 0.39444444444444443,
+    "unauthorized_act_rate": 0.35,
+    "question_burden": 0.18666666666666668,
+    "unnecessary_intervention_rate": 0.27,
+    "missed_opportunity_rate": 0.08,
+    "synthetic_expected_utility": -1.1055555555555556
+  },
+  "C1_state_plus_preference": {
+    "exact": 0.36333333333333334,
+    "acceptable": 0.5477777777777778,
+    "unauthorized_act_rate": 0.15,
+    "question_burden": 0.22444444444444445,
+    "unnecessary_intervention_rate": 0.1688888888888889,
+    "missed_opportunity_rate": 0.18333333333333332,
+    "synthetic_expected_utility": -0.4575
+  },
+  "C2_state_plus_authorization": {
+    "exact": 0.9011111111111111,
+    "acceptable": 0.9011111111111111,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.38333333333333336,
+    "unnecessary_intervention_rate": 0.06,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": 0.6569444444444444
+  },
+  "C3_full": {
+    "exact": 0.9866666666666667,
+    "acceptable": 0.9866666666666667,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.42,
+    "unnecessary_intervention_rate": 0.011111111111111112,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": 0.8627777777777778
+  },
+  "always_ask": {
+    "exact": 0.4222222222222222,
+    "acceptable": 0.69,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 1.0,
+    "unnecessary_intervention_rate": 0.31,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": -0.025
+  },
+  "always_silent": {
+    "exact": 0.31,
+    "acceptable": 0.31,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.0,
+    "unnecessary_intervention_rate": 0.0,
+    "missed_opportunity_rate": 0.69,
+    "synthetic_expected_utility": -0.8975
+  },
+  "always_act": {
+    "exact": 0.05,
+    "acceptable": 0.05,
+    "unauthorized_act_rate": 0.75,
+    "question_burden": 0.0,
+    "unnecessary_intervention_rate": 0.31,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": -2.4555555555555557
+  },
+  "always_suggest": {
+    "exact": 0.21777777777777776,
+    "acceptable": 0.64,
+    "unauthorized_act_rate": 0.0,
+    "question_burden": 0.0,
+    "unnecessary_intervention_rate": 0.31,
+    "missed_opportunity_rate": 0.0,
+    "synthetic_expected_utility": 0.125
+  },
+  "preference_permission_gap": {
+    "C0_state_only": {
+      "prohibited": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.4666666666666667,
+        "minimal": 0.4666666666666667
+      },
+      "ask_required": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.4666666666666667,
+        "minimal": 0.4666666666666667
+      },
+      "advisory": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.4666666666666667,
+        "minimal": 0.4666666666666667
+      }
+    },
+    "C1_state_plus_preference": {
+      "prohibited": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.0,
+        "minimal": 0.13333333333333333
+      },
+      "ask_required": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.0,
+        "minimal": 0.13333333333333333
+      },
+      "advisory": {
+        "autonomous": 0.4666666666666667,
+        "confirm": 0.0,
+        "minimal": 0.13333333333333333
+      }
+    },
+    "C2_state_plus_authorization": {
+      "prohibited": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      },
+      "ask_required": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      },
+      "advisory": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      }
+    },
+    "C3_full": {
+      "prohibited": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      },
+      "ask_required": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      },
+      "advisory": {
+        "autonomous": 0.0,
+        "confirm": 0.0,
+        "minimal": 0.0
+      }
+    }
+  }
+}

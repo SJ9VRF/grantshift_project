@@ -1,0 +1,218 @@
+{
+  "frozen_pre": 1.0,
+  "frozen_post": 0.0,
+  "adaptive_pre": 1.0,
+  "adaptive_post": 1.0,
+  "history": [
+    {
+      "turn": 1,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 2,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 3,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 4,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 5,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 6,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 7,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 8,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 9,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 10,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 11,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 12,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 13,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 14,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 15,
+      "true_target": "remind",
+      "frozen": "remind",
+      "adaptive": "remind",
+      "post_drift": false
+    },
+    {
+      "turn": 16,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 17,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 18,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 19,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 20,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 21,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 22,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 23,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 24,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 25,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 26,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 27,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 28,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 29,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    },
+    {
+      "turn": 30,
+      "true_target": "do_nothing",
+      "frozen": "remind",
+      "adaptive": "do_nothing",
+      "post_drift": true
+    }
+  ]
+}

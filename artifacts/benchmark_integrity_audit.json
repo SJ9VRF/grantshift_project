@@ -1,0 +1,39 @@
+{
+  "ready": true,
+  "trajectory_ids": 3204,
+  "duplicate_trajectory_ids": 0,
+  "semantic_duplicate_rows": 1512,
+  "prompt_records_full": 8892,
+  "duplicate_prompt_ids": 0,
+  "exact_prompt_duplicates_full_pool": 7290,
+  "prompt_records_unique": 1602,
+  "exact_prompt_duplicates_unique_pool": 0,
+  "prohibited_field_token_hits": {
+    "gold_action": 0,
+    "predicted_action": 0,
+    "exact_rate": 0,
+    "invalid_provenance_execution": 0
+  },
+  "family_counts": {
+    "provenance:concurrent_request_crosswire": 144,
+    "provenance:delegated_authority_revoked": 144,
+    "provenance:nonce_replay_after_new_request": 144,
+    "provenance:resource_changed_after_grant": 144,
+    "provenance:revision_changed_after_grant": 144,
+    "provenance:wrong_principal_confirmation": 144,
+    "scope_bound:deny_then_new_request": 180,
+    "scope_bound:double_supersession": 180,
+    "scope_bound:expire_then_refresh_new_scope": 180,
+    "scope_bound:late_confirmation_for_old_scope": 180,
+    "scope_bound:revoke_then_regrant_new_scope": 180,
+    "scope_bound:scope_change_after_grant": 180,
+    "transitions:delayed_confirm": 180,
+    "transitions:deny_after_ask": 180,
+    "transitions:expire": 180,
+    "transitions:grant": 180,
+    "transitions:revoke": 180,
+    "transitions:stale_confirmation": 180,
+    "transitions:supersede": 180
+  },
+  "scope_note": "This audit checks release integrity, exact duplication, IDs, and direct label leakage. It cannot establish absence of contamination in proprietary model pretraining data."
+}

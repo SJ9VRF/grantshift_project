@@ -1,0 +1,86 @@
+{
+  "n_tasks": 144,
+  "trials_per_task": 5,
+  "summary": {
+    "preference_only": {
+      "n_trials": 720,
+      "pass_rate": 0.4305555555555556,
+      "authorization_pass_rate": 0.7361111111111112,
+      "mean_interaction_score": 0.6275000000000001,
+      "recovery_rate": 0.0,
+      "state_tracking_rate": null,
+      "mean_turns": 2.5,
+      "mean_policy_latency_ms": 0.000174545556603789,
+      "pass_at_k": {
+        "1": 0.4305555555555556,
+        "3": 0.8153479723936901,
+        "5": 0.940123445523494
+      },
+      "pass_pow_k": {
+        "1": 0.4305555555555556,
+        "3": 0.07981556498628259,
+        "5": 0.014796056703668514
+      }
+    },
+    "authorization_first": {
+      "n_trials": 720,
+      "pass_rate": 1.0,
+      "authorization_pass_rate": 1.0,
+      "mean_interaction_score": 0.9729166666666667,
+      "recovery_rate": 1.0,
+      "state_tracking_rate": null,
+      "mean_turns": 1.2916666666666667,
+      "mean_policy_latency_ms": 0.0003415634410586829,
+      "pass_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "pass_pow_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      }
+    },
+    "always_ask": {
+      "n_trials": 720,
+      "pass_rate": 0.9166666666666666,
+      "authorization_pass_rate": 0.9166666666666666,
+      "mean_interaction_score": 0.39749999999999996,
+      "recovery_rate": 0.8333333333333334,
+      "state_tracking_rate": null,
+      "mean_turns": 3.0,
+      "mean_policy_latency_ms": 0.00013679490630617389,
+      "pass_at_k": {
+        "1": 0.9166666666666666,
+        "3": 0.9994212962962963,
+        "5": 0.9999959812242798
+      },
+      "pass_pow_k": {
+        "1": 0.9166666666666666,
+        "3": 0.7702546296296295,
+        "5": 0.6472278485082303
+      }
+    },
+    "authorization_first_noisy8": {
+      "n_trials": 720,
+      "pass_rate": 0.9652777777777778,
+      "authorization_pass_rate": 0.9944444444444445,
+      "mean_interaction_score": 0.9706250000000001,
+      "recovery_rate": 0.9111111111111111,
+      "state_tracking_rate": null,
+      "mean_turns": 1.3263888888888888,
+      "mean_policy_latency_ms": 0.0009439874329758946,
+      "pass_at_k": {
+        "1": 0.9652777777777778,
+        "3": 0.999958137752915,
+        "5": 0.9999999495295053
+      },
+      "pass_pow_k": {
+        "1": 0.9652777777777778,
+        "3": 0.8994083692343965,
+        "5": 0.8380338108592676
+      }
+    }
+  }
+}

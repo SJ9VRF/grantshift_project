@@ -1,0 +1,31 @@
+claims:
+  - id: c1
+    claim: Preference evidence and permission evidence should be evaluated separately.
+    status: supported_synthetic
+    evidence: [artifacts/v2_factorial_results.json, artifacts/v2_robustness_suite.json]
+  - id: c2
+    claim: State tracking is required for delayed confirmation and revocation in the sandbox.
+    status: supported_synthetic
+    evidence: [artifacts/cross_environment_eval.json]
+  - id: c3
+    claim: Failure mining can deterministically convert sandbox incidents into ranked preference-training records.
+    status: supported_pipeline
+    evidence: [artifacts/incident_bank.json, artifacts/failure_training_pairs.jsonl]
+  - id: c4
+    claim: GrantShift improves frontier-model behavior.
+    status: unverified_external
+    evidence: []
+  - id: c5
+    claim: GrantShift matches human intervention preferences.
+    status: unverified_human
+    evidence: []
+
+  - id: c6
+    claim: Controlled authorization changes while preference evidence is held fixed expose stale-authority and update-latency failures in static policies.
+    status: supported_synthetic
+    evidence: [artifacts/authorization_transition_eval.json]
+
+  - id: c7
+    claim: Scope-bound authorization exposes stale-grant failures hidden by latest-label evaluation.
+    status: supported_synthetic
+    evidence: [artifacts/scope_bound_authorization_eval.json, artifacts/transition_statistics.json]

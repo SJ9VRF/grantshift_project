@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "runs": {
+    "mock-smoke-001": {
+      "n_predictions": 30,
+      "n_unique_scenarios": 30,
+      "duplicate_scenarios": 0,
+      "models": [
+        "offline-rule-smoke-test"
+      ],
+      "providers": [
+        "local"
+      ],
+      "files": [
+        "artifacts/mock_frontier_predictions.jsonl"
+      ],
+      "mean_latency_ms": 0.0012896666703454684,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "sha256": "5fd8533c0a6ebc0b057ec5eef4a4a9a5342dba1cc8f1909da4a5606ea0b24855"
+    }
+  }
+}

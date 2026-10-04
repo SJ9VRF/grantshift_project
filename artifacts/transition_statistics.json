@@ -1,0 +1,239 @@
+{
+  "method": "trajectory-cluster bootstrap 95% CIs; exact paired McNemar/sign test on step correctness",
+  "seed": 1107,
+  "benchmarks": {
+    "authorization_transitions": {
+      "policies": {
+        "authorization_state_machine": {
+          "exact": {
+            "estimate": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "stale_authority_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          }
+        },
+        "latest_state": {
+          "exact": {
+            "estimate": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "stale_authority_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          }
+        },
+        "preference_first": {
+          "exact": {
+            "estimate": 0.35294117647058826,
+            "ci95": [
+              0.33801884567580026,
+              0.36771978437285785
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "stale_authority_execution": {
+            "estimate": 0.0392156862745098,
+            "ci95": [
+              0.03254944283338741,
+              0.04609398991550021
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.13725490196078433,
+            "ci95": [
+              0.12348297085157084,
+              0.15099497381792848
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          }
+        },
+        "static_initial_authority": {
+          "exact": {
+            "estimate": 0.47058823529411764,
+            "ci95": [
+              0.46361865064870567,
+              0.4779509586831866
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "stale_authority_execution": {
+            "estimate": 0.11764705882352941,
+            "ci95": [
+              0.10652636474599055,
+              0.12951123254401942
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1260,
+            "bootstrap_replicates": 2000
+          }
+        }
+      },
+      "paired_exact_comparison": {
+        "policy_a": "static_initial_authority",
+        "policy_b": "authorization_state_machine",
+        "paired_steps": 3060,
+        "a_correct_b_wrong": 0,
+        "b_correct_a_wrong": 1620,
+        "discordant": 1620,
+        "exact_two_sided_p": 0.0
+      }
+    },
+    "scope_bound_authorization": {
+      "policies": {
+        "latest_authorization_label": {
+          "exact": {
+            "estimate": 0.8888888888888888,
+            "ci95": [
+              0.8796296296296297,
+              0.8981481481481481
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "stale_scope_execution": {
+            "estimate": 0.1111111111111111,
+            "ci95": [
+              0.10185185185185185,
+              0.12037037037037036
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          }
+        },
+        "preference_first": {
+          "exact": {
+            "estimate": 0.4444444444444444,
+            "ci95": [
+              0.4228395061728395,
+              0.4660493827160494
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "stale_scope_execution": {
+            "estimate": 0.07407407407407407,
+            "ci95": [
+              0.06388888888888888,
+              0.08487654320987655
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.09259259259259259,
+            "ci95": [
+              0.0802391975308642,
+              0.10586419753086419
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          }
+        },
+        "scope_bound_state_machine": {
+          "exact": {
+            "estimate": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "stale_scope_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          },
+          "premature_execution": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_clusters": 1080,
+            "bootstrap_replicates": 2000
+          }
+        }
+      },
+      "paired_exact_comparison": {
+        "policy_a": "latest_authorization_label",
+        "policy_b": "scope_bound_state_machine",
+        "paired_steps": 3240,
+        "a_correct_b_wrong": 0,
+        "b_correct_a_wrong": 360,
+        "discordant": 360,
+        "exact_two_sided_p": 8.515919680016301e-109
+      }
+    }
+  },
+  "notes": [
+    "Uncertainty quantifies sampling over synthetic trajectory cells only; it is not human/model population uncertainty.",
+    "Paired tests are mechanism checks and should not be interpreted as evidence of frontier-model superiority."
+  ]
+}

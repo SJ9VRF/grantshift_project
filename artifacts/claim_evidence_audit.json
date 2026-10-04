@@ -1,0 +1,19 @@
+{
+  "version": "1.7.0",
+  "claim_count": 11,
+  "missing_evidence": [],
+  "empty_evidence": [],
+  "external_validation_claims": [
+    "C1_preference_permission_separable",
+    "C2_permission_evidence_controls_overreach",
+    "C3_surface_form_brittleness",
+    "C4_multi_trial_reliability",
+    "C5_state_tracking_under_shift",
+    "C7_dynamic_authorization_transitions",
+    "C8_scope_bound_authorization",
+    "C9_authorization_provenance",
+    "C10_compositional_capability_validity",
+    "C11_mutation_sensitivity"
+  ],
+  "ready": true
+}

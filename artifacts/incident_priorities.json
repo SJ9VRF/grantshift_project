@@ -1,0 +1,30 @@
+[
+  {
+    "failure_type": "authorization_overreach",
+    "count": 254,
+    "mean_severity": 1.0,
+    "frequency": 0.2224168126094571,
+    "priority": 0.72784588441331
+  },
+  {
+    "failure_type": "excess_interaction",
+    "count": 647,
+    "mean_severity": 0.6,
+    "frequency": 0.5665499124343257,
+    "priority": 0.588292469352014
+  },
+  {
+    "failure_type": "failed_confirmation_recovery",
+    "count": 134,
+    "mean_severity": 0.6,
+    "frequency": 0.11733800350262696,
+    "priority": 0.43106830122591944
+  },
+  {
+    "failure_type": "missed_or_wrong_outcome",
+    "count": 107,
+    "mean_severity": 0.6,
+    "frequency": 0.09369527145359019,
+    "priority": 0.4227933450087566
+  }
+]

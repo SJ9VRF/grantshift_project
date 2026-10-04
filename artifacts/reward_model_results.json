@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.8352941176470589,
+  "acceptable_action_rate": 0.9764705882352941,
+  "false_proactivity_rate": 0.0,
+  "missed_opportunity_rate": 0.037037037037037035,
+  "autonomy_violation_rate": 0.0
+}

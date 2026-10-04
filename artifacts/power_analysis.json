@@ -1,0 +1,7 @@
+{
+  "p1": 0.15,
+  "p2": 0.08,
+  "power": 0.8,
+  "approx_n_per_condition": 325,
+  "note": "normal approximation; use pilot-based mixed-effects simulation for preregistration"
+}

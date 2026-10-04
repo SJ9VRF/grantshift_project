@@ -1,0 +1,57 @@
+{
+  "method": "two-sided alpha=.05, power=.80 normal approximation for two independent proportions; use as conservative planning guidance, not a substitute for paired/bootstrap analysis",
+  "scenarios": [
+    {
+      "baseline_exact": 0.7,
+      "target_exact": 0.75,
+      "absolute_delta": 0.050000000000000044,
+      "approx_n_per_model_independent": 1251
+    },
+    {
+      "baseline_exact": 0.75,
+      "target_exact": 0.8,
+      "absolute_delta": 0.050000000000000044,
+      "approx_n_per_model_independent": 1094
+    },
+    {
+      "baseline_exact": 0.8,
+      "target_exact": 0.85,
+      "absolute_delta": 0.04999999999999993,
+      "approx_n_per_model_independent": 906
+    },
+    {
+      "baseline_exact": 0.85,
+      "target_exact": 0.9,
+      "absolute_delta": 0.050000000000000044,
+      "approx_n_per_model_independent": 686
+    },
+    {
+      "baseline_exact": 0.9,
+      "target_exact": 0.93,
+      "absolute_delta": 0.030000000000000027,
+      "approx_n_per_model_independent": 1356
+    },
+    {
+      "baseline_exact": 0.9,
+      "target_exact": 0.95,
+      "absolute_delta": 0.04999999999999993,
+      "approx_n_per_model_independent": 435
+    }
+  ],
+  "recommended_external_design": {
+    "models_minimum": 3,
+    "runs_per_model_minimum": 3,
+    "primary_unit": "trajectory",
+    "report": [
+      "trajectory-cluster bootstrap CI",
+      "paired exact/McNemar where applicable",
+      "family-stratified error rates",
+      "run-to-run variance"
+    ],
+    "prompt_pool_available": 8892
+  },
+  "notes": [
+    "Pre-register the primary model comparison and metric before inspecting full results.",
+    "For repeated stochastic runs, estimate variance empirically and update power with a hierarchical or cluster-aware simulation."
+  ]
+}

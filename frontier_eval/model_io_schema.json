@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GrantShift Frontier Evaluation Prediction",
+  "type": "object",
+  "required": ["scenario_id", "action", "model", "provider", "run_id"],
+  "properties": {
+    "scenario_id": {"type": "string", "minLength": 1},
+    "action": {"enum": ["act", "ask", "suggest", "remind", "wait", "defer", "do_nothing"]},
+    "model": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "temperature": {"type": ["number", "null"]},
+    "seed": {"type": ["integer", "null"]},
+    "raw_response": {"type": ["string", "null"]},
+    "latency_ms": {"type": ["number", "null"], "minimum": 0},
+    "input_tokens": {"type": ["integer", "null"], "minimum": 0},
+    "output_tokens": {"type": ["integer", "null"], "minimum": 0}
+  },
+  "additionalProperties": true
+}

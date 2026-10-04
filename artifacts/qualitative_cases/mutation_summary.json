@@ -1,0 +1,477 @@
+{
+  "benchmark": "GrantShift capability-ledger mutation sensitivity",
+  "mutants": {
+    "ignore_expiry": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 0.5,
+          "invalid_capability_execution_rate": 0.5,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.050000000000000044,
+      "exact_rate": 0.95,
+      "invalid_capability_execution_rate": 0.05,
+      "steps": 5760
+    },
+    "ignore_nonce_revocation": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "ignore_parent_revocation": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "ignore_principal_binding": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "ignore_request_binding": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "ignore_resource_binding": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "ignore_revision_binding": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 0.75,
+          "invalid_capability_execution_rate": 0.25,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.025000000000000022,
+      "exact_rate": 0.975,
+      "invalid_capability_execution_rate": 0.025,
+      "steps": 5760
+    },
+    "reference": {
+      "by_family": {
+        "concurrent_confirmation_reordered": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "delegation_parent_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "direct_nonce_revoked": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "expired_grant_replayed": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "principal_switch_old_nonce": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "request_changed_old_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "resource_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "revision_mismatch_grant": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        },
+        "scope_changed_then_regranted": {
+          "exact_rate": 1.0,
+          "invalid_capability_execution_rate": 0.0,
+          "n_steps": 576
+        }
+      },
+      "exact_drop_vs_reference": 0.0,
+      "exact_rate": 1.0,
+      "invalid_capability_execution_rate": 0.0,
+      "steps": 5760
+    }
+  },
+  "n_trajectories": 1440,
+  "notes": [
+    "Synthetic mutation analysis: intentionally broken authorization invariants must be detected by the challenge.",
+    "A zero-drop mutant indicates a benchmark blind spot and fails the intended release gate."
+  ],
+  "release_gate": {
+    "all_targeted_mutants_detected": true
+  }
+}

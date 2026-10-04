@@ -1,0 +1,209 @@
+{
+  "n_test": 85,
+  "gold_distribution": {
+    "wait": 9,
+    "ask": 36,
+    "do_nothing": 22,
+    "suggest": 14,
+    "remind": 4
+  },
+  "prediction_distribution": {
+    "wait": 11,
+    "ask": 36,
+    "do_nothing": 21,
+    "suggest": 12,
+    "remind": 5
+  },
+  "confusion_matrix": {
+    "act": {
+      "act": 0,
+      "ask": 0,
+      "suggest": 0,
+      "remind": 0,
+      "wait": 0,
+      "defer": 0,
+      "do_nothing": 0
+    },
+    "ask": {
+      "act": 0,
+      "ask": 35,
+      "suggest": 0,
+      "remind": 0,
+      "wait": 1,
+      "defer": 0,
+      "do_nothing": 0
+    },
+    "suggest": {
+      "act": 0,
+      "ask": 1,
+      "suggest": 12,
+      "remind": 1,
+      "wait": 0,
+      "defer": 0,
+      "do_nothing": 0
+    },
+    "remind": {
+      "act": 0,
+      "ask": 0,
+      "suggest": 0,
+      "remind": 4,
+      "wait": 0,
+      "defer": 0,
+      "do_nothing": 0
+    },
+    "wait": {
+      "act": 0,
+      "ask": 0,
+      "suggest": 0,
+      "remind": 0,
+      "wait": 8,
+      "defer": 0,
+      "do_nothing": 1
+    },
+    "defer": {
+      "act": 0,
+      "ask": 0,
+      "suggest": 0,
+      "remind": 0,
+      "wait": 0,
+      "defer": 0,
+      "do_nothing": 0
+    },
+    "do_nothing": {
+      "act": 0,
+      "ask": 0,
+      "suggest": 0,
+      "remind": 0,
+      "wait": 2,
+      "defer": 0,
+      "do_nothing": 20
+    }
+  },
+  "per_action": {
+    "act": {
+      "support": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "ask": {
+      "support": 36,
+      "predicted": 36,
+      "precision": 0.9722222222222222,
+      "recall": 0.9722222222222222,
+      "f1": 0.9722222222222222
+    },
+    "suggest": {
+      "support": 14,
+      "predicted": 12,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923
+    },
+    "remind": {
+      "support": 4,
+      "predicted": 5,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.888888888888889
+    },
+    "wait": {
+      "support": 9,
+      "predicted": 11,
+      "precision": 0.7272727272727273,
+      "recall": 0.8888888888888888,
+      "f1": 0.7999999999999999
+    },
+    "defer": {
+      "support": 0,
+      "predicted": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "do_nothing": {
+      "support": 22,
+      "predicted": 21,
+      "precision": 0.9523809523809523,
+      "recall": 0.9090909090909091,
+      "f1": 0.9302325581395349
+    }
+  },
+  "errors": [
+    {
+      "scenario_id": "sb1-0448",
+      "domain": "calendar",
+      "gold": "suggest",
+      "pred": "ask",
+      "acceptable": [
+        "suggest",
+        "ask",
+        "wait"
+      ],
+      "severity": 0.8,
+      "goal": "Advance a calendar goal triggered by new_information"
+    },
+    {
+      "scenario_id": "sb1-0523",
+      "domain": "privacy",
+      "gold": "suggest",
+      "pred": "remind",
+      "acceptable": [
+        "suggest",
+        "ask",
+        "wait"
+      ],
+      "severity": 0.49,
+      "goal": "Advance a privacy goal triggered by delay"
+    },
+    {
+      "scenario_id": "sb1-0549",
+      "domain": "information",
+      "gold": "do_nothing",
+      "pred": "wait",
+      "acceptable": [
+        "do_nothing",
+        "wait"
+      ],
+      "severity": 0.33,
+      "goal": "Advance a information goal triggered by forgotten_commitment"
+    },
+    {
+      "scenario_id": "sb1-0459",
+      "domain": "communication",
+      "gold": "do_nothing",
+      "pred": "wait",
+      "acceptable": [
+        "do_nothing",
+        "wait"
+      ],
+      "severity": 0.29,
+      "goal": "Advance a communication goal triggered by forgotten_commitment"
+    },
+    {
+      "scenario_id": "sb1-0119",
+      "domain": "high_stakes",
+      "gold": "wait",
+      "pred": "do_nothing",
+      "acceptable": [
+        "wait",
+        "do_nothing"
+      ],
+      "severity": 0.27,
+      "goal": "Advance a high_stakes goal triggered by forgotten_commitment"
+    },
+    {
+      "scenario_id": "sb1-0341",
+      "domain": "shopping",
+      "gold": "ask",
+      "pred": "wait",
+      "acceptable": [
+        "ask",
+        "suggest"
+      ],
+      "severity": 0.25,
+      "goal": "Advance a shopping goal triggered by schedule_conflict"
+    }
+  ]
+}

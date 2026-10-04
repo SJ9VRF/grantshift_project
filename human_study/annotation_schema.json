@@ -1,0 +1,19 @@
+{
+  "preferred_action": [
+    "act",
+    "ask",
+    "suggest",
+    "remind",
+    "wait",
+    "defer",
+    "do_nothing"
+  ],
+  "acceptable_actions": "multi-select from action set",
+  "appropriateness": "1-7",
+  "helpfulness": "1-7",
+  "perceived_control": "1-7",
+  "annoyance": "1-7",
+  "overreach": "yes/no",
+  "confidence": "1-5",
+  "free_text": "optional"
+}

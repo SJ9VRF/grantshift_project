@@ -1,0 +1,27 @@
+{
+  "name": "GrantShiftBench Scope-Bound Authorization Stress Test",
+  "n_trajectories": 1080,
+  "domains": [
+    "email",
+    "calendar",
+    "travel",
+    "shopping",
+    "files",
+    "communication"
+  ],
+  "preferences": [
+    "act",
+    "ask",
+    "suggest"
+  ],
+  "families": [
+    "scope_change_after_grant",
+    "late_confirmation_for_old_scope",
+    "revoke_then_regrant_new_scope",
+    "expire_then_refresh_new_scope",
+    "double_supersession",
+    "deny_then_new_request"
+  ],
+  "design": "Authorization is bound to an action scope/version; stale or delayed grants must not transfer to a changed scope.",
+  "evidence_status": "synthetic adversarial mechanism test; not human or frontier-model evidence"
+}

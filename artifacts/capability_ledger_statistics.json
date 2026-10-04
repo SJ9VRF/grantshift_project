@@ -1,0 +1,59 @@
+{
+  "benchmark": "GrantShiftBench Capability Ledger Challenge",
+  "unit": "trajectory-cluster bootstrap",
+  "policies": {
+    "capability_ledger": {
+      "n_trajectories": 1440,
+      "exact_rate": 1.0,
+      "exact_95ci": [
+        1.0,
+        1.0
+      ],
+      "invalid_execution_rate": 0.0,
+      "invalid_execution_95ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "flat_provenance": {
+      "n_trajectories": 1440,
+      "exact_rate": 0.9,
+      "exact_95ci": [
+        0.8916666666666667,
+        0.9086805555555556
+      ],
+      "invalid_execution_rate": 0.1,
+      "invalid_execution_95ci": [
+        0.09166666666666666,
+        0.10850694444444445
+      ]
+    },
+    "latest_authorization_label": {
+      "n_trajectories": 1440,
+      "exact_rate": 0.725,
+      "exact_95ci": [
+        0.7211805555555556,
+        0.7288194444444445
+      ],
+      "invalid_execution_rate": 0.275,
+      "invalid_execution_95ci": [
+        0.27118055555555554,
+        0.2791666666666667
+      ]
+    }
+  },
+  "paired_vs_capability_ledger": {
+    "latest_authorization_label": {
+      "ledger_better": 1584,
+      "other_better": 0,
+      "discordant_steps": 1584,
+      "two_sided_exact_p": 0.0
+    },
+    "flat_provenance": {
+      "ledger_better": 576,
+      "other_better": 0,
+      "discordant_steps": 576,
+      "two_sided_exact_p": 8.08634922390439e-174
+    }
+  }
+}

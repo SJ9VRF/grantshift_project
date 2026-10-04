@@ -1,0 +1,67 @@
+{
+  "autonomy_first": {
+    "default_action": "ask",
+    "interruption_tolerance": 0.35,
+    "domain_preferences": {
+      "calendar": "ask",
+      "communication": "ask",
+      "shopping": "ask",
+      "travel": "ask",
+      "productivity": "suggest",
+      "career": "suggest",
+      "routines": "remind"
+    }
+  },
+  "hands_off": {
+    "default_action": "do_nothing",
+    "interruption_tolerance": 0.15,
+    "domain_preferences": {
+      "calendar": "do_nothing",
+      "communication": "ask",
+      "shopping": "ask",
+      "travel": "ask",
+      "productivity": "wait",
+      "career": "suggest",
+      "routines": "do_nothing"
+    }
+  },
+  "delegator": {
+    "default_action": "suggest",
+    "interruption_tolerance": 0.8,
+    "domain_preferences": {
+      "calendar": "act",
+      "communication": "suggest",
+      "shopping": "ask",
+      "travel": "suggest",
+      "productivity": "act",
+      "career": "suggest",
+      "routines": "remind"
+    }
+  },
+  "reminder_friendly": {
+    "default_action": "remind",
+    "interruption_tolerance": 0.75,
+    "domain_preferences": {
+      "calendar": "remind",
+      "communication": "suggest",
+      "shopping": "ask",
+      "travel": "remind",
+      "productivity": "remind",
+      "career": "remind",
+      "routines": "remind"
+    }
+  },
+  "risk_averse": {
+    "default_action": "ask",
+    "interruption_tolerance": 0.45,
+    "domain_preferences": {
+      "calendar": "ask",
+      "communication": "ask",
+      "shopping": "ask",
+      "travel": "ask",
+      "productivity": "suggest",
+      "career": "ask",
+      "routines": "remind"
+    }
+  }
+}

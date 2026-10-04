@@ -1,0 +1,9 @@
+{
+  "name": "personalized_calibrated",
+  "benchmark": "GrantShiftBench v1",
+  "train_examples": 417,
+  "calibration_examples": 98,
+  "synthetic_labels": true,
+  "research_only": true,
+  "temperature": 0.8912509381337457
+}

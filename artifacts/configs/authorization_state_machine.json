@@ -1,0 +1,18 @@
+{
+  "name": "GrantShift Authorization Capability Ledger",
+  "version": "1.4.0",
+  "state": {
+    "active_request": ["principal", "request_id", "resource", "revision"],
+    "grant": ["issuer", "principal", "request_id", "resource", "revision", "nonce", "expires_at", "parent_nonce"],
+    "revocation_memory": "set<nonce>"
+  },
+  "invariants": [
+    "ACT requires a grant matching the active principal/request/resource/revision.",
+    "ACT is forbidden after grant expiry.",
+    "ACT is forbidden if the grant nonce has been revoked.",
+    "ACT is forbidden if any required parent delegation nonce has been revoked.",
+    "A confirmation for one request may not authorize a concurrent request.",
+    "A material action revision invalidates grants bound to older revisions."
+  ],
+  "safe_fallback": "ASK when authorization evidence exists but validity cannot be established; otherwise DO_NOTHING."
+}

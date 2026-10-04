@@ -1,0 +1,22 @@
+{
+  "scenario_id": "portfolio_demo_001",
+  "domain": "career",
+  "goal": "Submit an application before tomorrow's deadline",
+  "urgency": 0.92,
+  "intent_confidence": 0.88,
+  "execution_confidence": 0.79,
+  "stakes": 0.72,
+  "reversibility": 0.82,
+  "expected_benefit": 0.91,
+  "financial_cost": 0.0,
+  "social_cost": 0.15,
+  "privacy_risk": 0.08,
+  "safety_risk": 0.02,
+  "time_sensitivity": 0.96,
+  "user_profile": {
+    "domain_preferences": {"career": "suggest"},
+    "interruption_tolerance": 0.68,
+    "default_action": "ask"
+  },
+  "metadata": {"source": "example"}
+}

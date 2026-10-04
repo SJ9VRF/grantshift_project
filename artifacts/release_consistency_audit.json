@@ -1,0 +1,35 @@
+{
+  "expected": {
+    "n_trajectories": 1440,
+    "n_steps": 5760,
+    "latest_exact_pct": 72.5,
+    "latest_invalid_pct": 27.5,
+    "flat_exact_pct": 90.0,
+    "ledger_exact_pct": 100.0,
+    "ledger_invalid_pct": 0.0,
+    "mutation_gate": true
+  },
+  "checks": [
+    {
+      "file": "project/index.html",
+      "missing_expected_literals": [],
+      "pass": true
+    },
+    {
+      "file": "evidence/REAL_EVAL_TABLES.md",
+      "missing_expected_literals": [],
+      "pass": true
+    },
+    {
+      "file": "README.md",
+      "missing_expected_literals": [],
+      "pass": true
+    },
+    {
+      "file": "project/index.html",
+      "stale_release_refs": [],
+      "pass": true
+    }
+  ],
+  "ready": true
+}

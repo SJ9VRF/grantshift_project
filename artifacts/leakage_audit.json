@@ -1,0 +1,26 @@
+{
+  "split_version": "2.0",
+  "split_seed": 20260923,
+  "n_rows": 600,
+  "iid_sizes": {
+    "train": 417,
+    "dev": 98,
+    "test": 85
+  },
+  "id_overlap_counts": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "exact_input_duplicate_counts": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "label_tokens_in_vectorizer": [],
+  "passes": true,
+  "limitations": [
+    "Synthetic scenarios share a common generator and oracle by design; zero exact duplication does not imply independence of generative mechanism.",
+    "OOD evaluations are reported separately to probe generalization beyond IID splitting."
+  ]
+}

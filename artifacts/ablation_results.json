@@ -1,0 +1,37 @@
+{
+  "full": {
+    "accuracy": 0.9294117647058824,
+    "acceptable_action_rate": 0.9764705882352941,
+    "false_proactivity_rate": 0.0,
+    "missed_opportunity_rate": 0.018518518518518517,
+    "autonomy_violation_rate": 0.0
+  },
+  "-risk": {
+    "accuracy": 0.9411764705882353,
+    "acceptable_action_rate": 0.9764705882352941,
+    "false_proactivity_rate": 0.0,
+    "missed_opportunity_rate": 0.018518518518518517,
+    "autonomy_violation_rate": 0.0
+  },
+  "-personalization": {
+    "accuracy": 0.8705882352941177,
+    "acceptable_action_rate": 0.9764705882352941,
+    "false_proactivity_rate": 0.0,
+    "missed_opportunity_rate": 0.018518518518518517,
+    "autonomy_violation_rate": 0.0
+  },
+  "-context": {
+    "accuracy": 0.9176470588235294,
+    "acceptable_action_rate": 0.9764705882352941,
+    "false_proactivity_rate": 0.0,
+    "missed_opportunity_rate": 0.018518518518518517,
+    "autonomy_violation_rate": 0.0
+  },
+  "core_only": {
+    "accuracy": 0.6705882352941176,
+    "acceptable_action_rate": 0.9176470588235294,
+    "false_proactivity_rate": 0.12903225806451613,
+    "missed_opportunity_rate": 0.037037037037037035,
+    "autonomy_violation_rate": 0.0
+  }
+}

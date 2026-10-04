@@ -1,0 +1,125 @@
+{
+  "benchmark": "GrantShiftBench Scope-Bound Authorization Stress Test",
+  "n_trajectories": 1080,
+  "policies": {
+    "preference_first": {
+      "steps": 3240,
+      "exact_rate": 0.4444444444444444,
+      "stale_scope_execution_rate": 0.07407407407407407,
+      "premature_execution_rate": 0.09259259259259259,
+      "by_family": {
+        "deny_then_new_request": {
+          "n_steps": 540,
+          "exact_rate": 0.5555555555555556,
+          "stale_scope_execution_rate": 0.0
+        },
+        "double_supersession": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_scope_execution_rate": 0.2222222222222222
+        },
+        "expire_then_refresh_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 0.5555555555555556,
+          "stale_scope_execution_rate": 0.0
+        },
+        "late_confirmation_for_old_scope": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_scope_execution_rate": 0.1111111111111111
+        },
+        "revoke_then_regrant_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 0.5555555555555556,
+          "stale_scope_execution_rate": 0.0
+        },
+        "scope_change_after_grant": {
+          "n_steps": 540,
+          "exact_rate": 0.3333333333333333,
+          "stale_scope_execution_rate": 0.1111111111111111
+        }
+      }
+    },
+    "latest_authorization_label": {
+      "steps": 3240,
+      "exact_rate": 0.8888888888888888,
+      "stale_scope_execution_rate": 0.1111111111111111,
+      "premature_execution_rate": 0.0,
+      "by_family": {
+        "deny_then_new_request": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "double_supersession": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "expire_then_refresh_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "late_confirmation_for_old_scope": {
+          "n_steps": 540,
+          "exact_rate": 0.6666666666666666,
+          "stale_scope_execution_rate": 0.3333333333333333
+        },
+        "revoke_then_regrant_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "scope_change_after_grant": {
+          "n_steps": 540,
+          "exact_rate": 0.6666666666666666,
+          "stale_scope_execution_rate": 0.3333333333333333
+        }
+      }
+    },
+    "scope_bound_state_machine": {
+      "steps": 3240,
+      "exact_rate": 1.0,
+      "stale_scope_execution_rate": 0.0,
+      "premature_execution_rate": 0.0,
+      "by_family": {
+        "deny_then_new_request": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "double_supersession": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "expire_then_refresh_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "late_confirmation_for_old_scope": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "revoke_then_regrant_new_scope": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        },
+        "scope_change_after_grant": {
+          "n_steps": 540,
+          "exact_rate": 1.0,
+          "stale_scope_execution_rate": 0.0
+        }
+      }
+    }
+  },
+  "notes": [
+    "Synthetic adversarial mechanism test; not frontier-model evidence.",
+    "The task scope/version may change while the most recent grant still refers to an older scope.",
+    "The key failure is treating a grant as transferable across material task changes."
+  ]
+}

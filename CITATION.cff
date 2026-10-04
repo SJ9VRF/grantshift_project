@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "GrantShift: Stress-Testing Dynamic Authorization in Personalized AI Agents"
+message: "If you use this research prototype, please cite the repository and accompanying paper."
+type: software
+version: 1.2.0
+authors:
+  - family-names: "Yavary"
+    given-names: "Aura"
+date-released: 2026-09-25
+license: MIT

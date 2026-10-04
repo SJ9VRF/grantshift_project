@@ -1,0 +1,159 @@
+{
+  "task_count": 90,
+  "trial_count": 1350,
+  "overall": {
+    "authorization_first": {
+      "n_trials": 450,
+      "pass_rate": 0.8,
+      "authorization_pass_rate": 1.0,
+      "mean_interaction_score": 0.768,
+      "recovery_rate": 0.75,
+      "state_tracking_rate": 0.6666666666666666,
+      "mean_turns": 2.4,
+      "mean_policy_latency_ms": 0.0003241972224701486,
+      "pass_at_k": {
+        "1": 0.8,
+        "3": 0.992,
+        "5": 0.99968
+      },
+      "pass_pow_k": {
+        "1": 0.8,
+        "3": 0.5120000000000001,
+        "5": 0.3276800000000001
+      }
+    },
+    "robust_authorization_first": {
+      "n_trials": 450,
+      "pass_rate": 1.0,
+      "authorization_pass_rate": 1.0,
+      "mean_interaction_score": 0.9520000000000001,
+      "recovery_rate": 1.0,
+      "state_tracking_rate": 1.0,
+      "mean_turns": 2.0,
+      "mean_policy_latency_ms": 0.00031252222344038374,
+      "pass_at_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "pass_pow_k": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      }
+    },
+    "robust_authorization_first_noisy8": {
+      "n_trials": 450,
+      "pass_rate": 0.9066666666666666,
+      "authorization_pass_rate": 0.9844444444444445,
+      "mean_interaction_score": 0.9459777777777778,
+      "recovery_rate": 0.8944444444444445,
+      "state_tracking_rate": 0.9222222222222223,
+      "mean_turns": 2.026666666666667,
+      "mean_policy_latency_ms": 0.0008119375014041651,
+      "pass_at_k": {
+        "1": 0.9066666666666666,
+        "3": 0.9991869629629629,
+        "5": 0.999992917544033
+      },
+      "pass_pow_k": {
+        "1": 0.9066666666666666,
+        "3": 0.7453202962962961,
+        "5": 0.6126864089020575
+      }
+    }
+  },
+  "by_variant": {
+    "authorization_first": {
+      "standard": {
+        "n_trials": 180,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 1.5
+      },
+      "delayed_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 0.0,
+        "state_tracking_rate": 0.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 5.0
+      },
+      "revoked_after_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.0
+      },
+      "transient_tool_failure": {
+        "n_trials": 90,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.0
+      }
+    },
+    "robust_authorization_first": {
+      "standard": {
+        "n_trials": 180,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 1.5
+      },
+      "delayed_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 3.0
+      },
+      "revoked_after_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.0
+      },
+      "transient_tool_failure": {
+        "n_trials": 90,
+        "pass_rate": 1.0,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.0
+      }
+    },
+    "robust_authorization_first_noisy8": {
+      "standard": {
+        "n_trials": 180,
+        "pass_rate": 0.95,
+        "state_tracking_rate": 1.0,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 1.55
+      },
+      "delayed_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 0.8333333333333334,
+        "state_tracking_rate": 0.8666666666666667,
+        "authorization_pass_rate": 0.9222222222222223,
+        "mean_turns": 2.9
+      },
+      "revoked_after_confirmation": {
+        "n_trials": 90,
+        "pass_rate": 0.8666666666666667,
+        "state_tracking_rate": 0.9666666666666667,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.0444444444444443
+      },
+      "transient_tool_failure": {
+        "n_trials": 90,
+        "pass_rate": 0.9333333333333333,
+        "state_tracking_rate": 0.9333333333333333,
+        "authorization_pass_rate": 1.0,
+        "mean_turns": 2.088888888888889
+      }
+    }
+  },
+  "notes": "Controlled sandbox environment-shift evaluation; not frontier-model or human evidence."
+}

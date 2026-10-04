@@ -1,0 +1,16 @@
+{
+  "generic": {
+    "accuracy": 0.5125,
+    "acceptable_action_rate": 0.5125,
+    "false_proactivity_rate": 1.0,
+    "missed_opportunity_rate": 0.11940298507462686,
+    "autonomy_violation_rate": 0.0
+  },
+  "personalized": {
+    "accuracy": 0.925,
+    "acceptable_action_rate": 0.925,
+    "false_proactivity_rate": 0.07692307692307693,
+    "missed_opportunity_rate": 0.029850746268656716,
+    "autonomy_violation_rate": 0.0
+  }
+}

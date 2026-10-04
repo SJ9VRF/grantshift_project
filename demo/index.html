@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GrantShift — Interactive Demo</title>
+<style>
+:root{--bg:#0b0d10;--panel:#13171c;--muted:#9ba6b2;--text:#f3f6f9;--line:#262d35;--accent:#d6ff4b;--warn:#ffcb6b}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1180px;margin:auto;padding:36px 22px 64px}.eyebrow{letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-size:12px;font-weight:700}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:end;margin:10px 0 28px}.hero h1{font-size:clamp(38px,6vw,78px);line-height:.98;margin:0;letter-spacing:-.045em}.hero p{color:var(--muted);font-size:17px;margin:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}.card h2{font-size:15px;margin:0 0 16px}.row{display:grid;grid-template-columns:160px 1fr 52px;gap:12px;align-items:center;margin:13px 0}.row label{color:#c5ced7}.row output{font-variant-numeric:tabular-nums;text-align:right}.selectrow{display:grid;grid-template-columns:160px 1fr;gap:12px;align-items:center;margin:12px 0}select,input[type=range]{width:100%}select{background:#0f1317;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px}.decision{border:1px solid #39414a;background:#0f1317;border-radius:14px;padding:18px}.decision .action{font-size:40px;letter-spacing:-.035em;font-weight:750}.confidence{color:var(--accent);font-variant-numeric:tabular-nums}.meter{height:8px;background:#20262d;border-radius:999px;overflow:hidden;margin:8px 0 16px}.meter span{display:block;height:100%;background:var(--accent)}.trace{display:grid;grid-template-columns:1fr 1fr;gap:8px}.trace div{border-top:1px solid var(--line);padding:9px 0;color:#c7d0da}.trace b{float:right;color:#fff}.why{margin-top:14px;color:var(--muted)}.note{margin-top:18px;color:var(--muted);font-size:13px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 9px;margin:4px 5px 0 0;color:#dbe3ea}.footer{margin-top:18px;color:var(--muted);font-size:13px}@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.row,.selectrow{grid-template-columns:120px 1fr 44px}.selectrow{grid-template-columns:120px 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">GrantShift</div>
+  <section class="hero">
+    <h1>When should an AI act?</h1>
+    <p>Explore a transparent policy that trades off urgency, confidence, risk, reversibility, and user-specific autonomy preferences. The research model is richer; this browser demo is intentionally deterministic and offline.</p>
+  </section>
+  <section class="grid">
+    <div class="card">
+      <h2>Scenario state</h2>
+      <div class="selectrow"><label>Domain</label><select id="domain"><option>career</option><option>travel</option><option>calendar</option><option>communication</option><option>financial</option><option>privacy</option></select></div>
+      <div class="selectrow"><label>User preference</label><select id="pref"><option value="ask">Ask first</option><option value="suggest" selected>Suggest</option><option value="remind">Remind</option><option value="act">Act when safe</option><option value="wait">Wait</option><option value="do_nothing">Do nothing</option></select></div>
+      <div id="sliders"></div>
+      <div class="note">Try raising stakes while lowering reversibility, or switching the same state between “act” and “ask first.” The recommended intervention should become more conservative.</div>
+    </div>
+    <div class="card">
+      <h2>Intervention decision</h2>
+      <div class="decision">
+        <div class="action" id="action">SUGGEST</div>
+        <div class="confidence" id="confidence">confidence 0.82</div>
+        <div class="meter"><span id="bar" style="width:82%"></span></div>
+        <div class="trace" id="trace"></div>
+        <div class="why" id="why"></div>
+      </div>
+      <div style="margin-top:16px">
+        <span class="pill">ACT</span><span class="pill">ASK</span><span class="pill">SUGGEST</span><span class="pill">REMIND</span><span class="pill">WAIT</span><span class="pill">DEFER</span><span class="pill">DO NOTHING</span>
+      </div>
+      <div class="footer">The full repository includes learned personalized policies, held-out calibration, 600 benchmark scenarios, 160 contrastive personalization cases, preference drift tests, and failure analysis.</div>
+    </div>
+  </section>
+</div>
+<script>
+const specs=[
+ ['urgency','Urgency',.92],['intent','Intent confidence',.88],['execution','Execution confidence',.79],['stakes','Stakes',.72],['reversibility','Reversibility',.82],['benefit','Expected benefit',.91],['privacy','Privacy risk',.08],['safety','Safety risk',.02],['interrupt','Interruption tolerance',.68]
+];
+const sliders=document.getElementById('sliders');
+for(const [id,label,val] of specs){const row=document.createElement('div');row.className='row';row.innerHTML=`<label>${label}</label><input id="${id}" type="range" min="0" max="1" step="0.01" value="${val}"><output id="${id}o">${val.toFixed(2)}</output>`;sliders.appendChild(row);document.getElementById(id).addEventListener('input',e=>{document.getElementById(id+'o').textContent=(+e.target.value).toFixed(2);decide()})}
+document.getElementById('pref').addEventListener('change',decide);document.getElementById('domain').addEventListener('change',decide);
+function v(id){return +document.getElementById(id).value}
+function decide(){
+ const pref=document.getElementById('pref').value;
+ const risk=Math.min(1,.28*v('stakes')+.22*(1-v('reversibility'))+.18*v('privacy')+.22*v('safety')+.10*(1-v('execution')));
+ const evidence=.34*v('intent')+.24*v('execution')+.22*v('urgency')+.20*v('benefit');
+ let action='suggest', reason='Useful opportunity, but direct action is not sufficiently justified.';
+ if(v('benefit')<.3 || (v('urgency')<.28 && v('benefit')<.55)){action='do_nothing';reason='Expected benefit is too low to justify interruption.'}
+ else if(risk>.66 || (v('stakes')>.72 && v('reversibility')<.48)){action='ask';reason='High stakes or low reversibility make explicit confirmation preferable.'}
+ else if(evidence<.52){action='wait';reason='Evidence for intervention is weak; waiting preserves user autonomy.'}
+ else if(pref==='do_nothing' && v('urgency')<.9){action='do_nothing';reason='The user-specific autonomy preference outweighs the current opportunity.'}
+ else if(pref==='wait' && v('urgency')<.88){action='wait';reason='The user prefers low interruption and the situation is not critical.'}
+ else if(pref==='act' && risk<.34 && evidence>.76){action='act';reason='The user prefers autonomy and the action is low-risk, reversible, and well-supported.'}
+ else if(pref==='remind'){action='remind';reason='A reminder matches the user preference without taking control away.'}
+ else if(pref==='ask'){action='ask';reason='The user explicitly prefers confirmation before intervention.'}
+ else {action='suggest';reason='A suggestion advances the goal while preserving optionality.'}
+ const confidence=Math.max(.51,Math.min(.97,.58+.28*Math.abs(evidence-.5)+.18*Math.abs(risk-.5)));
+ document.getElementById('action').textContent=action.replace('_',' ').toUpperCase();
+ document.getElementById('confidence').textContent=`confidence ${confidence.toFixed(2)}`;document.getElementById('bar').style.width=`${confidence*100}%`;
+ document.getElementById('trace').innerHTML=`<div>Evidence <b>${evidence.toFixed(2)}</b></div><div>Risk <b>${risk.toFixed(2)}</b></div><div>Urgency <b>${v('urgency').toFixed(2)}</b></div><div>Reversibility <b>${v('reversibility').toFixed(2)}</b></div><div>User preference <b>${pref}</b></div><div>Interruption tolerance <b>${v('interrupt').toFixed(2)}</b></div>`;
+ document.getElementById('why').textContent=reason;
+}
+decide();
+</script>
+</body></html>

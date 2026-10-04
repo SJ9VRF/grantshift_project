@@ -1,0 +1,116 @@
+{
+  "version": "1.7.0",
+  "claims": [
+    {
+      "id": "C1_preference_permission_separable",
+      "claim": "Preference evidence and task-specific authorization are behaviorally distinct intervention signals in the controlled protocol.",
+      "evidence": [
+        "artifacts/v2_factorial_results.json",
+        "artifacts/v2_robustness_suite.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C2_permission_evidence_controls_overreach",
+      "claim": "Masking or shuffling authorization evidence sharply increases error and unauthorized autonomous action in the text baseline.",
+      "evidence": [
+        "artifacts/v2_robustness_suite.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C3_surface_form_brittleness",
+      "claim": "Canonical-set performance overstates generalization under held-out permission and preference paraphrases.",
+      "evidence": [
+        "artifacts/v2_surface_generalization.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C4_multi_trial_reliability",
+      "claim": "Repeated-trial consistency can be substantially lower than single-trial pass rate under seeded action noise.",
+      "evidence": [
+        "artifacts/trajectory_eval.json"
+      ],
+      "scope": "synthetic_agent_sandbox",
+      "external_validation_required": true
+    },
+    {
+      "id": "C5_state_tracking_under_shift",
+      "claim": "A state-tracking authorization policy handles delayed confirmation and transient environment failures that break a static rule policy.",
+      "evidence": [
+        "artifacts/cross_environment_eval.json"
+      ],
+      "scope": "synthetic_agent_sandbox",
+      "external_validation_required": true
+    },
+    {
+      "id": "C6_failure_to_training_data",
+      "claim": "Failed trajectories can be deterministically mined into prioritized incidents and weighted preference-training records.",
+      "evidence": [
+        "artifacts/incident_bank.json",
+        "artifacts/incident_priorities.json",
+        "artifacts/failure_training_pairs.jsonl"
+      ],
+      "scope": "research_infrastructure",
+      "external_validation_required": false
+    },
+    {
+      "id": "C7_dynamic_authorization_transitions",
+      "claim": "Holding preference evidence fixed while authorization changes exposes stale-authority, premature-execution, repeated-ask, and update-latency failures that are hidden by static permission evaluation.",
+      "evidence": [
+        "artifacts/authorization_transition_eval.json"
+      ],
+      "scope": "synthetic_transition_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C8_scope_bound_authorization",
+      "claim": "An authorization label is insufficient when a grant is bound to an obsolete action scope; scope/version provenance exposes stale-grant execution hidden by the simpler transition suite.",
+      "evidence": [
+        "artifacts/scope_bound_authorization_eval.json",
+        "artifacts/transition_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C9_authorization_provenance",
+      "claim": "Authorization validity depends on grant provenance; replay, wrong-principal, cross-request, resource, revision, and delegated-authority mismatches expose failures hidden by a latest-label policy.",
+      "evidence": [
+        "artifacts/authorization_provenance_eval.json",
+        "artifacts/authorization_provenance_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C10_compositional_capability_validity",
+      "claim": "Authorization must remain valid across scope, expiry, replay history, principal identity, concurrent requests, and delegation ancestry; flat provenance checks are insufficient under composed authority changes.",
+      "evidence": [
+        "artifacts/capability_ledger_eval.json",
+        "artifacts/capability_ledger_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true
+    },
+    {
+      "id": "C11_mutation_sensitivity",
+      "claim": "Each targeted capability-validity invariant is independently exercised: deleting expiry, nonce, parent-delegation, request, principal, resource, or revision checks causes measurable benchmark failure.",
+      "evidence": [
+        "artifacts/capability_mutation_eval.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true
+    }
+  ],
+  "prohibited_claims_without_external_evidence": [
+    "GrantShift is state of the art on frontier models",
+    "GrantShift matches human preferences",
+    "GrantShift is safe for deployment",
+    "GrantShift improves a production model through post-training"
+  ]
+}

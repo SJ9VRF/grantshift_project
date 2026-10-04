@@ -1,0 +1,50 @@
+{
+  "version": "1.7.0",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "command": "/opt/pyvenv/bin/python experiments/run_capability_ledger_eval.py",
+      "returncode": 0,
+      "seconds": 2.77,
+      "stdout_tail": "        },\n        \"principal_mismatch_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"principal_switch_old_nonce\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"request_changed_old_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"resource_mismatch_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"revision_mismatch_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"scope_changed_then_regranted\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        }\n      }\n    }\n  },\n  \"notes\": [\n    \"Synthetic adversarial mechanism test; not frontier-model evidence.\",\n    \"Tests compositional validity across scope, expiry, replay, principal identity, concurrency, delegation ancestry, and revocation history.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python experiments/run_capability_mutation_eval.py",
+      "returncode": 0,
+      "seconds": 2.547,
+      "stdout_tail": "lid_capability_execution_rate\": 0.0\n        },\n        \"principal_switch_old_nonce\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"request_changed_old_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"resource_mismatch_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        },\n        \"revision_mismatch_grant\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 0.75,\n          \"invalid_capability_execution_rate\": 0.25\n        },\n        \"scope_changed_then_regranted\": {\n          \"n_steps\": 576,\n          \"exact_rate\": 1.0,\n          \"invalid_capability_execution_rate\": 0.0\n        }\n      },\n      \"exact_drop_vs_reference\": 0.025000000000000022\n    }\n  },\n  \"release_gate\": {\n    \"all_targeted_mutants_detected\": true\n  },\n  \"notes\": [\n    \"Synthetic mutation analysis: intentionally broken authorization invariants must be detected by the challenge.\",\n    \"A zero-drop mutant indicates a benchmark blind spot and fails the intended release gate.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python scripts/build_evidence_graph.py",
+      "returncode": 0,
+      "seconds": 2.149,
+      "stdout_tail": "{\n  \"claims_without_experiment_links\": [],\n  \"evidence_files_missing\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python scripts/validate_claim_evidence.py",
+      "returncode": 0,
+      "seconds": 2.021,
+      "stdout_tail": "{\n  \"version\": \"1.7.0\",\n  \"claim_count\": 11,\n  \"missing_evidence\": [],\n  \"empty_evidence\": [],\n  \"external_validation_claims\": [\n    \"C1_preference_permission_separable\",\n    \"C2_permission_evidence_controls_overreach\",\n    \"C3_surface_form_brittleness\",\n    \"C4_multi_trial_reliability\",\n    \"C5_state_tracking_under_shift\",\n    \"C7_dynamic_authorization_transitions\",\n    \"C8_scope_bound_authorization\",\n    \"C9_authorization_provenance\",\n    \"C10_compositional_capability_validity\",\n    \"C11_mutation_sensitivity\"\n  ],\n  \"ready\": true\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "command": "/opt/pyvenv/bin/python scripts/audit_release_consistency.py",
+      "returncode": 0,
+      "seconds": 1.994,
+      "stdout_tail": "{\n  \"expected\": {\n    \"n_trajectories\": 1440,\n    \"n_steps\": 5760,\n    \"latest_exact_pct\": 72.5,\n    \"latest_invalid_pct\": 27.5,\n    \"flat_exact_pct\": 90.0,\n    \"ledger_exact_pct\": 100.0,\n    \"ledger_invalid_pct\": 0.0,\n    \"mutation_gate\": true\n  },\n  \"checks\": [\n    {\n      \"file\": \"project/index.html\",\n      \"missing_expected_literals\": [],\n      \"pass\": true\n    },\n    {\n      \"file\": \"evidence/REAL_EVAL_TABLES.md\",\n      \"missing_expected_literals\": [],\n      \"pass\": true\n    },\n    {\n      \"file\": \"README.md\",\n      \"missing_expected_literals\": [],\n      \"pass\": true\n    },\n    {\n      \"file\": \"project/index.html\",\n      \"stale_release_refs\": [],\n      \"pass\": true\n    }\n  ],\n  \"ready\": true\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "sha256": {
+    "artifacts/capability_ledger_eval.json": "3acc93dce6ec0d78f7a9d7a919b891ad8b07d75625cf0efa65b17f66cb179b2d",
+    "artifacts/capability_mutation_eval.json": "67a1c4a01dd3afe553b05745c922afd6ea3d5e704409c77b305c624ddfb7d566",
+    "evidence/EVIDENCE_GRAPH.json": "03919baeb2a60a93e14c9ec845dca042fadbde0c27162d9b6b922912b6e438f2",
+    "artifacts/claim_evidence_audit.json": "73002e3a17e46de40737ec96b08b7bd4cb70aa1c7fd22101143eae640e2f6b22",
+    "artifacts/release_consistency_audit.json": "6b8d4898329e59e2f4dcfe4dec2dadd3dfd5c3cf8efaba8eb54c31f9db8d277d"
+  },
+  "ready": true
+}

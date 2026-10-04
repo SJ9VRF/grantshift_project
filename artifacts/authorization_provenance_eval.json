@@ -1,0 +1,125 @@
+{
+  "benchmark": "GrantShiftBench Authorization Provenance Challenge",
+  "n_trajectories": 864,
+  "policies": {
+    "preference_first": {
+      "steps": 2592,
+      "exact_rate": 0.35185185185185186,
+      "invalid_provenance_execution_rate": 0.1111111111111111,
+      "premature_execution_rate": 0.09259259259259259,
+      "by_family": {
+        "concurrent_request_crosswire": {
+          "n_steps": 432,
+          "exact_rate": 0.3333333333333333,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        },
+        "delegated_authority_revoked": {
+          "n_steps": 432,
+          "exact_rate": 0.4444444444444444,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        },
+        "nonce_replay_after_new_request": {
+          "n_steps": 432,
+          "exact_rate": 0.3333333333333333,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        },
+        "resource_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 0.3333333333333333,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        },
+        "revision_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 0.3333333333333333,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        },
+        "wrong_principal_confirmation": {
+          "n_steps": 432,
+          "exact_rate": 0.3333333333333333,
+          "invalid_provenance_execution_rate": 0.1111111111111111
+        }
+      }
+    },
+    "latest_authorization_label": {
+      "steps": 2592,
+      "exact_rate": 0.6666666666666666,
+      "invalid_provenance_execution_rate": 0.3333333333333333,
+      "premature_execution_rate": 0.0,
+      "by_family": {
+        "concurrent_request_crosswire": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        },
+        "delegated_authority_revoked": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        },
+        "nonce_replay_after_new_request": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        },
+        "resource_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        },
+        "revision_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        },
+        "wrong_principal_confirmation": {
+          "n_steps": 432,
+          "exact_rate": 0.6666666666666666,
+          "invalid_provenance_execution_rate": 0.3333333333333333
+        }
+      }
+    },
+    "provenance_state_machine": {
+      "steps": 2592,
+      "exact_rate": 1.0,
+      "invalid_provenance_execution_rate": 0.0,
+      "premature_execution_rate": 0.0,
+      "by_family": {
+        "concurrent_request_crosswire": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        },
+        "delegated_authority_revoked": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        },
+        "nonce_replay_after_new_request": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        },
+        "resource_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        },
+        "revision_changed_after_grant": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        },
+        "wrong_principal_confirmation": {
+          "n_steps": 432,
+          "exact_rate": 1.0,
+          "invalid_provenance_execution_rate": 0.0
+        }
+      }
+    }
+  },
+  "notes": [
+    "Synthetic adversarial mechanism test; not frontier-model evidence.",
+    "A grant is treated as a capability token bound to principal, request, resource, and revision.",
+    "The test detects replay, cross-request confusion, wrong-principal confirmation, and sticky delegation revocation."
+  ]
+}

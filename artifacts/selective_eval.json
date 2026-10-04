@@ -1,0 +1,146 @@
+{
+  "description": "Selective prediction: only intervene when calibrated top-label confidence exceeds threshold.",
+  "temperature": 0.8912509381337457,
+  "points": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.05,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.1,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.15,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.25,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.3,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.4,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.45,
+      "coverage": 1.0,
+      "exact_accuracy": 0.929412,
+      "acceptable_rate": 0.976471,
+      "severity_weighted_error": 0.008706
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.988235,
+      "exact_accuracy": 0.940476,
+      "acceptable_rate": 0.97619,
+      "severity_weighted_error": 0.00881
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 0.988235,
+      "exact_accuracy": 0.940476,
+      "acceptable_rate": 0.97619,
+      "severity_weighted_error": 0.00881
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.988235,
+      "exact_accuracy": 0.940476,
+      "acceptable_rate": 0.97619,
+      "severity_weighted_error": 0.00881
+    },
+    {
+      "threshold": 0.65,
+      "coverage": 0.988235,
+      "exact_accuracy": 0.940476,
+      "acceptable_rate": 0.97619,
+      "severity_weighted_error": 0.00881
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.941176,
+      "exact_accuracy": 0.9625,
+      "acceptable_rate": 0.975,
+      "severity_weighted_error": 0.00925
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.929412,
+      "exact_accuracy": 0.974684,
+      "acceptable_rate": 0.974684,
+      "severity_weighted_error": 0.009367
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.894118,
+      "exact_accuracy": 0.986842,
+      "acceptable_rate": 0.986842,
+      "severity_weighted_error": 0.003289
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.847059,
+      "exact_accuracy": 0.986111,
+      "acceptable_rate": 0.986111,
+      "severity_weighted_error": 0.003472
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.847059,
+      "exact_accuracy": 0.986111,
+      "acceptable_rate": 0.986111,
+      "severity_weighted_error": 0.003472
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.776471,
+      "exact_accuracy": 0.984848,
+      "acceptable_rate": 0.984848,
+      "severity_weighted_error": 0.003788
+    }
+  ]
+}
