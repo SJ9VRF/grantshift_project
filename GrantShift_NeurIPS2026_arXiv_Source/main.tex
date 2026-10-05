@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[letterpaper,textheight=9in,textwidth=5.5in,top=1in]{geometry}
+\usepackage{times}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\setlength{\columnsep}{0.25in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize Preprint. Work in progress.}
+\fancyfoot[R]{\footnotesize \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\newif\ifanonymous
+\anonymousfalse
+\input{paper_body.tex}
