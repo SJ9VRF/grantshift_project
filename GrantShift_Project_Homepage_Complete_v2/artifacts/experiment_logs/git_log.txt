@@ -1,0 +1,12 @@
+6ecd720 (HEAD -> master) release: close v1.7 quality gates and remove stale audit paths
+79e740d release: prepare GrantShift v1.7.0 evidence-integrity snapshot
+7aeb802 site: expose evidence graph and skeptical review path
+9a22ec1 evidence: add claim graph reproduction and consistency gates
+7a441f2 (origin/master, origin/HEAD) site: tighten evidence labels for sixty-second review
+5bc2570 test: gate evidence homepage semantics without legacy release artifacts
+c3c1092 site: repair project links and expose benchmark artifacts
+419e628 release: preserve incremental evidence history and journal export
+7e5ab5f site: integrate evidence layer into flagship project page
+87a0eb3 evidence: add experiment journal failures and decision records
+a4e52dc evidence: organize raw evals configs and failure artifacts
+9711870 import: GrantShift v1.5.0 research snapshot

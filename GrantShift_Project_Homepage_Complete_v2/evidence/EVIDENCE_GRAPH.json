@@ -1,0 +1,268 @@
+{
+  "version": "1.7.0",
+  "claims": [
+    {
+      "id": "C1_preference_permission_separable",
+      "claim": "Preference evidence and task-specific authorization are behaviorally distinct intervention signals in the controlled protocol.",
+      "evidence": [
+        "artifacts/v2_factorial_results.json",
+        "artifacts/v2_robustness_suite.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-001",
+        "Exp-002",
+        "Exp-004",
+        "Exp-005"
+      ]
+    },
+    {
+      "id": "C2_permission_evidence_controls_overreach",
+      "claim": "Masking or shuffling authorization evidence sharply increases error and unauthorized autonomous action in the text baseline.",
+      "evidence": [
+        "artifacts/v2_robustness_suite.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-004",
+        "Exp-005"
+      ]
+    },
+    {
+      "id": "C3_surface_form_brittleness",
+      "claim": "Canonical-set performance overstates generalization under held-out permission and preference paraphrases.",
+      "evidence": [
+        "artifacts/v2_surface_generalization.json"
+      ],
+      "scope": "synthetic_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-003"
+      ]
+    },
+    {
+      "id": "C4_multi_trial_reliability",
+      "claim": "Repeated-trial consistency can be substantially lower than single-trial pass rate under seeded action noise.",
+      "evidence": [
+        "artifacts/trajectory_eval.json"
+      ],
+      "scope": "synthetic_agent_sandbox",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-006"
+      ]
+    },
+    {
+      "id": "C5_state_tracking_under_shift",
+      "claim": "A state-tracking authorization policy handles delayed confirmation and transient environment failures that break a static rule policy.",
+      "evidence": [
+        "artifacts/cross_environment_eval.json"
+      ],
+      "scope": "synthetic_agent_sandbox",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-007"
+      ]
+    },
+    {
+      "id": "C6_failure_to_training_data",
+      "claim": "Failed trajectories can be deterministically mined into prioritized incidents and weighted preference-training records.",
+      "evidence": [
+        "artifacts/incident_bank.json",
+        "artifacts/incident_priorities.json",
+        "artifacts/failure_training_pairs.jsonl"
+      ],
+      "scope": "research_infrastructure",
+      "external_validation_required": false,
+      "experiments": [
+        "Exp-014"
+      ]
+    },
+    {
+      "id": "C7_dynamic_authorization_transitions",
+      "claim": "Holding preference evidence fixed while authorization changes exposes stale-authority, premature-execution, repeated-ask, and update-latency failures that are hidden by static permission evaluation.",
+      "evidence": [
+        "artifacts/authorization_transition_eval.json"
+      ],
+      "scope": "synthetic_transition_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-008"
+      ]
+    },
+    {
+      "id": "C8_scope_bound_authorization",
+      "claim": "An authorization label is insufficient when a grant is bound to an obsolete action scope; scope/version provenance exposes stale-grant execution hidden by the simpler transition suite.",
+      "evidence": [
+        "artifacts/scope_bound_authorization_eval.json",
+        "artifacts/transition_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-009"
+      ]
+    },
+    {
+      "id": "C9_authorization_provenance",
+      "claim": "Authorization validity depends on grant provenance; replay, wrong-principal, cross-request, resource, revision, and delegated-authority mismatches expose failures hidden by a latest-label policy.",
+      "evidence": [
+        "artifacts/authorization_provenance_eval.json",
+        "artifacts/authorization_provenance_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-010"
+      ]
+    },
+    {
+      "id": "C10_compositional_capability_validity",
+      "claim": "Authorization must remain valid across scope, expiry, replay history, principal identity, concurrent requests, and delegation ancestry; flat provenance checks are insufficient under composed authority changes.",
+      "evidence": [
+        "artifacts/capability_ledger_eval.json",
+        "artifacts/capability_ledger_statistics.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-011",
+        "Exp-013"
+      ]
+    },
+    {
+      "id": "C11_mutation_sensitivity",
+      "claim": "Each targeted capability-validity invariant is independently exercised: deleting expiry, nonce, parent-delegation, request, principal, resource, or revision checks causes measurable benchmark failure.",
+      "evidence": [
+        "artifacts/capability_mutation_eval.json"
+      ],
+      "scope": "synthetic_adversarial_mechanism",
+      "external_validation_required": true,
+      "experiments": [
+        "Exp-012",
+        "Exp-013"
+      ]
+    }
+  ],
+  "experiments": [
+    {
+      "id": "Exp-001",
+      "title": "Structured-factor baseline exposed a leakage problem",
+      "evidence": [
+        "experiments/run_v2_factorial.py",
+        "artifacts/v2_factorial_results.json"
+      ]
+    },
+    {
+      "id": "Exp-002",
+      "title": "Natural-language factorial benchmark",
+      "evidence": [
+        "silensiabench/v2/",
+        "artifacts/v2_factorial_results.json"
+      ]
+    },
+    {
+      "id": "Exp-003",
+      "title": "Held-out paraphrase collapse",
+      "evidence": [
+        "experiments/run_v2_surface_generalization.py",
+        "artifacts/v2_surface_generalization.json"
+      ]
+    },
+    {
+      "id": "Exp-004",
+      "title": "Surface augmentation repaired the shortcut",
+      "evidence": [
+        "artifacts/v2_robustness_suite.json"
+      ]
+    },
+    {
+      "id": "Exp-005",
+      "title": "Evidence-channel negative controls",
+      "evidence": [
+        "experiments/run_v2_robustness_suite.py",
+        "artifacts/v2_robustness_suite.json"
+      ]
+    },
+    {
+      "id": "Exp-006",
+      "title": "Multi-turn trajectory harness",
+      "evidence": [
+        "experiments/run_agent_trajectory_eval.py",
+        "artifacts/trajectory_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-007",
+      "title": "Delayed confirmation broke the static policy",
+      "evidence": [
+        "experiments/run_cross_environment_eval.py",
+        "artifacts/cross_environment_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-008",
+      "title": "Latest-label shortcut looked perfect",
+      "evidence": [
+        "experiments/run_authorization_transition_eval.py",
+        "artifacts/authorization_transition_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-009",
+      "title": "Scope-bound authorization falsified latest-label tracking",
+      "evidence": [
+        "experiments/run_scope_bound_authorization_eval.py",
+        "artifacts/scope_bound_authorization_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-010",
+      "title": "Provenance challenge",
+      "evidence": [
+        "experiments/run_authorization_provenance_eval.py",
+        "artifacts/authorization_provenance_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-011",
+      "title": "Capability ledger and a bug in our own policy",
+      "evidence": [
+        "experiments/run_capability_ledger_eval.py",
+        "artifacts/capability_ledger_eval.json",
+        "configs/authorization_state_machine.json"
+      ]
+    },
+    {
+      "id": "Exp-012",
+      "title": "Mutation testing falsified the benchmark",
+      "evidence": [
+        "experiments/run_capability_mutation_eval.py",
+        "artifacts/capability_mutation_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-013",
+      "title": "Mutation-complete capability challenge",
+      "evidence": [
+        "artifacts/capability_mutation_eval.json",
+        "artifacts/capability_ledger_eval.json"
+      ]
+    },
+    {
+      "id": "Exp-014",
+      "title": "Failure mining into post-training records",
+      "evidence": [
+        "artifacts/incident_bank.json",
+        "artifacts/incident_priorities.json",
+        "artifacts/failure_training_pairs.jsonl"
+      ]
+    }
+  ],
+  "integrity": {
+    "claims_without_experiment_links": [],
+    "evidence_files_missing": []
+  }
+}

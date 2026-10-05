@@ -1,0 +1,18 @@
+{
+  "project": "GrantShift",
+  "version": "1.7.0",
+  "author": "Aura Yavary",
+  "tests_verified": 73,
+  "claim_count": 11,
+  "experiment_journal_entries": 14,
+  "release_audit_ready": true,
+  "claim_evidence_audit_ready": true,
+  "core_reproduction_ready": true,
+  "release_consistency_ready": true,
+  "evidence_graph_orphans": [],
+  "capability_trajectories": 1440,
+  "capability_steps": 5760,
+  "latest_label_invalid_execution": 0.275,
+  "capability_ledger_invalid_execution": 0.0,
+  "evidence_boundary": "Synthetic mechanism and infrastructure evidence only; no frontier-model SOTA, human-validity, production-safety, or post-training-improvement claim."
+}

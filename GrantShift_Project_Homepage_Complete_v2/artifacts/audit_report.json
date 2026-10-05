@@ -1,0 +1,81 @@
+{
+  "missing_required_artifacts": [],
+  "benchmark_validation": {
+    "grantshiftbench/scenarios/v1.jsonl": {
+      "path": "/mnt/data/grantshift-v1.7.0-work/grantshiftbench/scenarios/v1.jsonl",
+      "valid": true,
+      "n": 600,
+      "domains": {
+        "productivity": 50,
+        "career": 50,
+        "travel": 50,
+        "communication": 50,
+        "calendar": 50,
+        "shopping": 50,
+        "routines": 50,
+        "privacy": 50,
+        "financial": 50,
+        "information": 50,
+        "social": 50,
+        "high_stakes": 50
+      },
+      "preferred_actions": {
+        "do_nothing": 159,
+        "wait": 55,
+        "ask": 241,
+        "remind": 35,
+        "suggest": 110
+      },
+      "errors": []
+    },
+    "grantshiftbench/scenarios/contrast_v1.jsonl": {
+      "path": "/mnt/data/grantshift-v1.7.0-work/grantshiftbench/scenarios/contrast_v1.jsonl",
+      "valid": true,
+      "n": 160,
+      "domains": {
+        "calendar": 44,
+        "routines": 40,
+        "productivity": 48,
+        "career": 28
+      },
+      "preferred_actions": {
+        "do_nothing": 13,
+        "suggest": 75,
+        "remind": 41,
+        "ask": 11,
+        "wait": 12,
+        "act": 8
+      },
+      "errors": []
+    },
+    "grantshiftbench/scenarios/frontier_v1.jsonl": {
+      "path": "/mnt/data/grantshift-v1.7.0-work/grantshiftbench/scenarios/frontier_v1.jsonl",
+      "valid": true,
+      "n": 240,
+      "domains": {
+        "routines": 40,
+        "calendar": 40,
+        "travel": 40,
+        "productivity": 40,
+        "social": 40,
+        "financial": 40
+      },
+      "preferred_actions": {
+        "remind": 60,
+        "ask": 60,
+        "do_nothing": 62,
+        "suggest": 58
+      },
+      "errors": []
+    }
+  },
+  "tests_passed": true,
+  "metadata_checks": {
+    "author_is_aura_yavary": true,
+    "project_name_is_grantshift": true
+  },
+  "claim_evidence_audit_passed": true,
+  "pytest_stdout": "verified test matrix: 73 passed",
+  "pytest_stderr": "",
+  "ready": true
+}

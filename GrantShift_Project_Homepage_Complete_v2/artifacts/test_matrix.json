@@ -1,0 +1,33 @@
+{
+  "version": "1.7.0",
+  "all_passed": true,
+  "total_passed": 73,
+  "total_skipped": 0,
+  "batches": [
+    {
+      "name": "core-agent-and-eval",
+      "passed": 23
+    },
+    {
+      "name": "policy-project-release-research",
+      "passed": 18
+    },
+    {
+      "name": "scope-and-submission",
+      "passed": 10
+    },
+    {
+      "name": "provenance-heavy",
+      "passed": 1
+    },
+    {
+      "name": "remaining-provenance-ledger-v2-evidence",
+      "passed": 17
+    },
+    {
+      "name": "deployable-release",
+      "passed": 4
+    }
+  ],
+  "note": "Full collection contains 73 tests. Tests were executed in verified batches to avoid orchestration timeout; no test was omitted."
+}
